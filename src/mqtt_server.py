@@ -2,7 +2,7 @@ import paho.mqtt.client as mqtt
 import os
 import csv
 
-from utils import write_to_csv
+from utils import write_to_csv, send_telegram_message
 
 ERROR_MESSAGE = "ESP32_ERROR"
 ESP32_SUBSCRIBE_TOPIC = "esp32/main"
@@ -19,6 +19,7 @@ def on_message(client, userdata, message):
     print(payload_str)
     
     write_to_csv(CSV_FILENAME)
+    send_telegram_message("Hello from ESP32")
     
     client.publish(ESP32_PUBLISH_TOPIC, "test")
 
