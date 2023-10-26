@@ -39,3 +39,11 @@ def send_telegram_message(message):
         print(response.text)
     except Exception as e:
         print(e)
+        
+def process_json_payload(payload_json, keys):
+    extracted_data = {}
+    for key in keys:
+        if key in payload_json:
+            extracted_data[key] = payload_json[key]
+
+    return extracted_data

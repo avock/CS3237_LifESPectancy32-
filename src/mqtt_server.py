@@ -1,13 +1,15 @@
 import paho.mqtt.client as mqtt
 import os
 import csv
+import json
 
-from utils import write_to_csv, send_telegram_message
+from utils import write_to_csv, send_telegram_message, process_json_payload
 
 ERROR_MESSAGE = "ESP32_ERROR"
-ESP32_SUBSCRIBE_TOPIC = "esp32/main"
-ESP32_PUBLISH_TOPIC = "helloo/main"
+ESP32_SUBSCRIBE_TOPIC = "home/input"
+ESP32_PUBLISH_TOPIC = "home/response"
 CSV_FILENAME = "test.csv"
+JSON_KEYS = ["photoresistor", "pir_state", "ultrasonic_distance_cm", "temperature", "humidity"]
 
 def on_connect(client, userdata, flags, rc):
     print(f"Connected with result code: {str(rc)}")
@@ -16,12 +18,13 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, message):
     payload_str = message.payload.decode('utf-8')
-    print(payload_str)
+    payload_json = json.loads(payload_str)
+
+    data = process_json_payload(payload_json, JSON_KEYS)
+    write_to_csv(CSV_FILENAME, JSON_KEYS, data)
+    send_telegram_message(data)
     
-    write_to_csv(CSV_FILENAME)
-    send_telegram_message("Hello from ESP32")
-    
-    client.publish(ESP32_PUBLISH_TOPIC, "test")
+    client.publish(ESP32_PUBLISH_TOPIC, "1")
 
 client = mqtt.Client()
 client.on_connect = on_connect

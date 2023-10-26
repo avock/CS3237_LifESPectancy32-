@@ -252,3 +252,56 @@ sudo systemctl restart mqtt_server.service
 clear
 sudo journalctl -u mqtt_server.service -n 50
 clear
+rm -rf .git
+clear
+ls
+clear
+git init
+clear
+git add .
+git commit -m "Initial Commit"
+iclear
+clear
+git remote add origin https://github.com/avock/CS3237_LifESPectancy32-.git
+git push -u origin master
+git add .
+git commit -m "Add alias for mqtt commands"
+git push 
+clear
+mqtt start
+mqtt_start
+python3 test.py 
+clear
+pip install python-telegram-bot
+clear
+python3 test.py 
+pip uninstall python-telegram-bot
+clear
+python3 test.py 
+clear
+python3 test.py 
+pip install python-dotenv
+clear
+python3 test.py 
+clear\
+clear
+git add .
+git commit -m "Add telegram message sending feature"
+git push
+mqtt_restart
+mqtt_stop
+mqtt_start
+mqtt_restart
+mqtt_stop
+git add .
+git commit -m "Update telegram message sending"
+git push
+clear
+ls
+cat nohup.out 
+clear
+exit
+mqtt_start
+exit
+mqtt_stop
+ls
