@@ -3,3 +3,4 @@
 .cache
 test.py
 .env
+.local/share

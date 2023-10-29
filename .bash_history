@@ -305,3 +305,28 @@ mqtt_start
 exit
 mqtt_stop
 ls
+msqtt_start
+mqtt_start
+mqtt_restart
+mqtt_stop
+mqtt_start
+mqtt_stop
+mqtt_start
+mqtt_restart
+mqtt_log
+clear
+mqtt_restart
+mqtt_stop
+mqtt_start
+mqtt_stop
+clear
+git addw .
+git add .
+git commit -m "Add json parsing"
+git push
+exit\
+clear
+exit
+pip install virtualenv
+virtualenv venv
+clear
