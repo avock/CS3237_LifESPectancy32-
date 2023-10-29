@@ -4,6 +4,7 @@
 
 alias mqtt_start='sudo systemctl start mqtt_server.service'
 alias mqtt_stop='sudo systemctl stop mqtt_server.service'
+alias mqtt_status='sudo systemctl status mqtt_server.service'
 alias mqtt_edit='vim /etc/systemd/system/mqtt_server.service'
 alias mqtt_restart='sudo systemctl restart mqtt_server.service'
 alias mqtt_enable='sudo systemctl enable mqtt_server.service'
@@ -12,6 +13,7 @@ alias mqtt_log='sudo journalctl -u mqtt_server.service -n 25'
 
 alias flask_start='sudo systemctl start flask_RESTapi.service'
 alias flask_stop='sudo systemctl stop flask_RESTapi.service'
+alias flask_status='sudo systemctl status flask_RESTapi.service'
 alias flask_edit='vim /etc/systemd/system/flask_RESTapi.service'
 alias flask_restart='sudo systemctl restart flask_RESTapi.service'
 alias flask_enable='sudo systemctl enable flask_RESTapi.service'
