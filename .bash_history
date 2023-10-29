@@ -369,3 +369,52 @@ git commit -m "Add Flask Error Handling"
 git push 
 clear
 exit
+python3 src/ML/model.py 
+source venv/bin/activate
+pip install sklearn
+pip install scikit-learn numpy
+clear
+python3 src/ML/model.py 
+python3 src/ML/predict_test.py 
+clear
+python3 src/ML/predict_test.py \
+python3 src/ML/predict_test.py 
+python3 src/ML/model.py 
+python3 src/ML/predict_test.py 
+clear
+python3 src/ML/model.py 
+python3 src/ML/predict_test.py
+clear
+vim .bashrc 
+source .bash
+source .bashrc 
+clear
+c;ear
+clear
+ml_run 
+clear
+ml_run 
+clear
+ml_run 
+vim .bashrc
+clear
+source .bashrc 
+clear
+ml_run
+git add .
+git commit -m "Add ML models"
+clear
+nano .bashrc
+clear
+source venv/bin/activate
+pip install supervisor
+clear
+ls /etc
+clear
+vim /etc/systemd/system/flask_restapi.service
+vim /etc/systemd/system/mqtt_server.service 
+vim /etc/systemd/system/flask_restapi.service
+mv /etc/systemd/system/flask_restapi.service /etc/systemd/system/flask_RESTapi.service 
+clea
+vim /etc/systemd/system/flask_restapi.service
+vim /etc/systemd/system/flask_RESTapi.service

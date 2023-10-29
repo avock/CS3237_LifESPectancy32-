@@ -14,10 +14,10 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1698583577,,"wq"
 :q
-|2,0,1698072573,,"q"
+|2,0,1698584655,,"q"
+:wq
+|2,0,1698584155,,"wq"
 :qw
 |2,0,1698069034,,"qw"
 
@@ -43,230 +43,255 @@ $
 |3,0,3,1,1,0,1698068871,"After=network.target"
 
 # File marks:
-'0  11  12  ~/.bashrc
-|4,48,11,12,1698583577,"~/.bashrc"
-'1  11  36  ~/.bashrc
-|4,49,11,36,1698583473,"~/.bashrc"
-'2  11  69  ~/.bashrc
-|4,50,11,69,1698583444,"~/.bashrc"
-'3  11  69  ~/.bashrc
-|4,51,11,69,1698583444,"~/.bashrc"
-'4  10  60  ~/.bashrc
-|4,52,10,60,1698072728,"~/.bashrc"
-'5  10  60  ~/.bashrc
-|4,53,10,60,1698072728,"~/.bashrc"
-'6  10  60  ~/.bashrc
-|4,54,10,60,1698072728,"~/.bashrc"
-'7  10  60  ~/.bashrc
-|4,55,10,60,1698072728,"~/.bashrc"
-'8  10  60  ~/.bashrc
-|4,56,10,60,1698072728,"~/.bashrc"
-'9  10  60  ~/.bashrc
-|4,57,10,60,1698072728,"~/.bashrc"
+'0  6  0  /etc/systemd/system/flask_RESTapi.service
+|4,48,6,0,1698584655,"/etc/systemd/system/flask_RESTapi.service"
+'1  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,49,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
+'2  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,50,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
+'3  1  0  /etc/systemd/system/flask_restapi.service
+|4,51,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+'4  9  50  /etc/systemd/system/flask_restapi.service
+|4,52,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+'5  9  50  /etc/systemd/system/flask_restapi.service
+|4,53,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+'6  5  35  /etc/systemd/system/mqtt_server.service
+|4,54,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+'7  1  0  /etc/systemd/system/flask_restapi.service
+|4,55,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+'8  1  0  /etc/systemd/system/flask_restapi.service
+|4,56,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+'9  1  0  /etc/systemd/system/flask_restapi.service
+|4,57,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
 
 # Jumplist (newest first):
+-'  6  0  /etc/systemd/system/flask_RESTapi.service
+|4,39,6,0,1698584655,"/etc/systemd/system/flask_RESTapi.service"
+-'  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,39,1,0,1698584565,"/etc/systemd/system/flask_RESTapi.service"
+-'  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,39,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
 -'  11  12  ~/.bashrc
 |4,39,11,12,1698583577,"~/.bashrc"
--'  11  36  ~/.bashrc
-|4,39,11,36,1698583473,"~/.bashrc"
--'  11  69  ~/.bashrc
-|4,39,11,69,1698583444,"~/.bashrc"
--'  10  60  ~/.bashrc
-|4,39,10,60,1698583406,"~/.bashrc"
--'  10  60  ~/.bashrc
-|4,39,10,60,1698583406,"~/.bashrc"
--'  10  60  ~/.bashrc
-|4,39,10,60,1698583406,"~/.bashrc"
--'  10  60  ~/.bashrc
-|4,39,10,60,1698072728,"~/.bashrc"
--'  6  56  ~/.bashrc
-|4,39,6,56,1698072607,"~/.bashrc"
--'  6  56  ~/.bashrc
-|4,39,6,56,1698072607,"~/.bashrc"
--'  6  56  ~/.bashrc
-|4,39,6,56,1698072607,"~/.bashrc"
--'  6  56  ~/.bashrc
-|4,39,6,56,1698072607,"~/.bashrc"
--'  6  56  ~/.bashrc
-|4,39,6,56,1698072597,"~/.bashrc"
--'  100  0  ~/.bashrc
-|4,39,100,0,1698072577,"~/.bashrc"
--'  95  0  ~/.bashrc
-|4,39,95,0,1698072577,"~/.bashrc"
--'  98  0  ~/.bashrc
-|4,39,98,0,1698072577,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1698072577,"~/.bashrc"
--'  98  0  ~/.bashrc
-|4,39,98,0,1698072577,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1698072577,"~/.bashrc"
--'  98  0  ~/.bashrc
-|4,39,98,0,1698072577,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1698072577,"~/.bashrc"
--'  97  0  ~/.bashrc
-|4,39,97,0,1698072573,"~/.bashrc"
--'  92  0  ~/.bashrc
-|4,39,92,0,1698072573,"~/.bashrc"
--'  95  0  ~/.bashrc
-|4,39,95,0,1698072573,"~/.bashrc"
--'  90  0  ~/.bashrc
-|4,39,90,0,1698072573,"~/.bashrc"
--'  95  0  ~/.bashrc
-|4,39,95,0,1698072573,"~/.bashrc"
--'  90  0  ~/.bashrc
-|4,39,90,0,1698072573,"~/.bashrc"
--'  95  0  ~/.bashrc
-|4,39,95,0,1698072573,"~/.bashrc"
--'  90  0  ~/.bashrc
-|4,39,90,0,1698072573,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1698072562,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1698072562,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1698072562,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1698072562,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1698072562,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1698072562,"~/.bashrc"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  35  /etc/systemd/system/mqtt_server.service
-|4,39,5,35,1698069232,"/etc/systemd/system/mqtt_server.service"
--'  5  26  /etc/systemd/system/mqtt_server.service
-|4,39,5,26,1698069070,"/etc/systemd/system/mqtt_server.service"
--'  5  26  /etc/systemd/system/mqtt_server.service
-|4,39,5,26,1698069070,"/etc/systemd/system/mqtt_server.service"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
+-'  11  12  ~/.bashrc
+|4,39,11,12,1698583577,"~/.bashrc"
 
 # History of marks within files (newest to oldest):
+
+> /etc/systemd/system/flask_RESTapi.service
+	*	1698584654	0
+	"	6	0
+
+> /etc/systemd/system/flask_restapi.service
+	*	1698584188	0
+	"	1	0
+	^	9	51
+	.	9	50
+	+	12	25
+	+	2	29
+	+	5	43
+	+	6	25
+	+	8	52
+	+	9	50
+
+> /etc/systemd/system/mqtt_server.service
+	*	1698584054	0
+	"	5	35
+	^	5	36
+	.	5	35
+	+	3	0
+	+	6	0
+	+	5	35
 
 > ~/.bashrc
 	*	1698583576	0
@@ -283,15 +308,6 @@ $
 	+	13	15
 	+	12	13
 	+	11	12
-
-> /etc/systemd/system/mqtt_server.service
-	*	1698069232	0
-	"	5	35
-	^	5	36
-	.	5	35
-	+	3	0
-	+	6	0
-	+	5	35
 
 > /etc/mosquitto/mosquitto.conf
 	*	1698065522	0
