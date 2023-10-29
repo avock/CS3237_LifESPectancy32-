@@ -330,3 +330,42 @@ exit
 pip install virtualenv
 virtualenv venv
 clear
+source venv/bin/activate
+pip install flask flask-restful flask-uploads
+clear
+python src/app.py 
+pip install -U Werkzeug
+python3 src/app.py 
+pip install -U Werkzeug==0.16.0
+python src/app.py 
+clear
+pip uninstall flask flask-restful flask-uploads
+clear
+pip install flask
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py \
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+git add .
+git commit -m "Add Image Upload/Download Feature"
+git push
+clear
+python src/app.py 
+clear
+git add .
+git commit -m "Add Flask Error Handling"
+git push 
+clear
+exit

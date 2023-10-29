@@ -8,7 +8,9 @@ alias mqtt_restart='sudo systemctl restart mqtt_server.service'
 alias mqtt_enable='sudo systemctl enable mqtt_server.service'
 alias mqtt_disable='sudo systemctl disable mqtt_server.service'
 alias mqtt_log='sudo journalctl -u mqtt_server.service -n 25'
-
+alias ml_both='python src/ML/model.py; python src/ML/predict_test.py'
+alias ml_train='python src/ML/model.py'
+alias ml_predict='python src/ML/predict_test.py'
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
