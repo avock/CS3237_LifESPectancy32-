@@ -64,9 +64,10 @@ def download_file(image_filename):
     filename = secure_filename(image_filename)
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
 
-    if not os.path.exists(file_path):
-        error_response = {'error': 'File not found'}
-        return jsonify(error_response), 404
+    # TODO : To re-add check for file existence
+    # if not os.path.exists(file_path):
+    #     error_response = {'error': 'File not found'}
+    #     return jsonify(error_response), 404
 
     static_image_url = url_for('static', filename=image_filename)
     return redirect(static_image_url)
