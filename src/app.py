@@ -61,8 +61,19 @@ def upload_file():
  
 @app.route('/image/download/<image_filename>')
 def download_file(image_filename):
+    filename = secure_filename(image_filename)
+    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+
+    if not os.path.exists(file_path):
+        error_response = {'error': 'File not found'}
+        return jsonify(error_response), 404
+
     static_image_url = url_for('static', filename=image_filename)
     return redirect(static_image_url)
+
+@app.route('/<path:path>')
+def fallback(path):
+    return "Wrong Endpoint!"
  
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
