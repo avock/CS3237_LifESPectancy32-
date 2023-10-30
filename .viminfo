@@ -14,10 +14,10 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1698599766,,"wq"
 :q
 |2,0,1698584655,,"q"
-:wq
-|2,0,1698584155,,"wq"
 :qw
 |2,0,1698069034,,"qw"
 
@@ -33,40 +33,53 @@ $
 
 # Registers:
 ""1	LINE	0
-	User=root
-|3,1,1,1,1,0,1698068893,"User=root"
+	WorkingDirectory=/root/src
+|3,1,1,1,1,0,1698599643,"WorkingDirectory=/root/src"
 "2	LINE	0
-	WorkingDirectory=~
-|3,0,2,1,1,0,1698068892,"WorkingDirectory=~"
+	User=root
+|3,0,2,1,1,0,1698068893,"User=root"
 "3	LINE	0
+	WorkingDirectory=~
+|3,0,3,1,1,0,1698068892,"WorkingDirectory=~"
+"4	LINE	0
 	After=network.target
-|3,0,3,1,1,0,1698068871,"After=network.target"
+|3,0,4,1,1,0,1698068871,"After=network.target"
 
 # File marks:
-'0  6  0  /etc/systemd/system/flask_RESTapi.service
-|4,48,6,0,1698584655,"/etc/systemd/system/flask_RESTapi.service"
-'1  1  0  /etc/systemd/system/flask_RESTapi.service
-|4,49,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
-'2  1  0  /etc/systemd/system/flask_RESTapi.service
-|4,50,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
-'3  1  0  /etc/systemd/system/flask_restapi.service
-|4,51,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
-'4  9  50  /etc/systemd/system/flask_restapi.service
-|4,52,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
-'5  9  50  /etc/systemd/system/flask_restapi.service
-|4,53,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
-'6  5  35  /etc/systemd/system/mqtt_server.service
-|4,54,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
-'7  1  0  /etc/systemd/system/flask_restapi.service
-|4,55,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
-'8  1  0  /etc/systemd/system/flask_restapi.service
-|4,56,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
-'9  1  0  /etc/systemd/system/flask_restapi.service
-|4,57,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
+'0  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,48,7,21,1698599766,"/etc/systemd/system/flask_RESTapi.service"
+'1  6  0  /etc/systemd/system/flask_RESTapi.service
+|4,49,6,0,1698599645,"/etc/systemd/system/flask_RESTapi.service"
+'2  6  0  /etc/systemd/system/flask_RESTapi.service
+|4,50,6,0,1698599645,"/etc/systemd/system/flask_RESTapi.service"
+'3  6  0  /etc/systemd/system/flask_RESTapi.service
+|4,51,6,0,1698584655,"/etc/systemd/system/flask_RESTapi.service"
+'4  6  0  /etc/systemd/system/flask_RESTapi.service
+|4,52,6,0,1698584655,"/etc/systemd/system/flask_RESTapi.service"
+'5  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,53,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
+'6  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,54,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
+'7  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,55,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
+'8  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,56,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
+'9  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,57,1,0,1698584269,"/etc/systemd/system/flask_RESTapi.service"
 
 # Jumplist (newest first):
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698599766,"/etc/systemd/system/flask_RESTapi.service"
+-'  6  0  /etc/systemd/system/flask_RESTapi.service
+|4,39,6,0,1698599755,"/etc/systemd/system/flask_RESTapi.service"
+-'  6  0  /etc/systemd/system/flask_RESTapi.service
+|4,39,6,0,1698599645,"/etc/systemd/system/flask_RESTapi.service"
 -'  6  0  /etc/systemd/system/flask_RESTapi.service
 |4,39,6,0,1698584655,"/etc/systemd/system/flask_RESTapi.service"
+-'  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,39,1,0,1698584565,"/etc/systemd/system/flask_RESTapi.service"
+-'  1  0  /etc/systemd/system/flask_RESTapi.service
+|4,39,1,0,1698584565,"/etc/systemd/system/flask_RESTapi.service"
 -'  1  0  /etc/systemd/system/flask_RESTapi.service
 |4,39,1,0,1698584565,"/etc/systemd/system/flask_RESTapi.service"
 -'  1  0  /etc/systemd/system/flask_RESTapi.service
@@ -79,6 +92,30 @@ $
 |4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
 -'  1  0  /etc/systemd/system/flask_restapi.service
 |4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584190,"/etc/systemd/system/flask_restapi.service"
 -'  9  50  /etc/systemd/system/flask_restapi.service
 |4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
 -'  9  50  /etc/systemd/system/flask_restapi.service
@@ -95,6 +132,78 @@ $
 |4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
 -'  9  50  /etc/systemd/system/flask_restapi.service
 |4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  9  50  /etc/systemd/system/flask_restapi.service
+|4,39,9,50,1698584155,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
+-'  1  0  /etc/systemd/system/flask_restapi.service
+|4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
 -'  1  0  /etc/systemd/system/flask_restapi.service
 |4,39,1,0,1698584066,"/etc/systemd/system/flask_restapi.service"
 -'  1  0  /etc/systemd/system/flask_restapi.service
@@ -135,142 +244,40 @@ $
 |4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
 -'  5  35  /etc/systemd/system/mqtt_server.service
 |4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
--'  1  0  /etc/systemd/system/flask_restapi.service
-|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
--'  1  0  /etc/systemd/system/flask_restapi.service
-|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
--'  1  0  /etc/systemd/system/flask_restapi.service
-|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
--'  1  0  /etc/systemd/system/flask_restapi.service
-|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
--'  1  0  /etc/systemd/system/flask_restapi.service
-|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
--'  1  0  /etc/systemd/system/flask_restapi.service
-|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
--'  1  0  /etc/systemd/system/flask_restapi.service
-|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
--'  1  0  /etc/systemd/system/flask_restapi.service
-|4,39,1,0,1698584038,"/etc/systemd/system/flask_restapi.service"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
--'  11  12  ~/.bashrc
-|4,39,11,12,1698583577,"~/.bashrc"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
+-'  5  35  /etc/systemd/system/mqtt_server.service
+|4,39,5,35,1698584064,"/etc/systemd/system/mqtt_server.service"
 
 # History of marks within files (newest to oldest):
 
 > /etc/systemd/system/flask_RESTapi.service
-	*	1698584654	0
-	"	6	0
+	*	1698599766	0
+	"	7	21
+	^	7	22
+	.	7	21
+	+	6	0
+	+	7	21
 
 > /etc/systemd/system/flask_restapi.service
 	*	1698584188	0

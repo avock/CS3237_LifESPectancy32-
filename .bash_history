@@ -418,3 +418,104 @@ mv /etc/systemd/system/flask_restapi.service /etc/systemd/system/flask_RESTapi.s
 clea
 vim /etc/systemd/system/flask_restapi.service
 vim /etc/systemd/system/flask_RESTapi.service
+source venv/bin/activate
+sudo mkdir -p /var/log/flask_restAPI
+sudo systemctl start flask_restAPI.service
+sudo systemctl start flask_RESTapi.service
+sudo systemctl enable flask_RESTapi.service
+sudol systemctl status flask_RESTapi.service
+sudo systemctl status flask_RESTapi.service
+clear
+sudo journalctl -u flask_RESTapi.service -n 25
+sudo journalctl -u flask_RESTapi.service
+clear
+sudo systemctl start flask_RESTapi.service
+sudo systemctl status flask_RESTapi.service
+w
+clear
+python3 /root/src/app.py 
+clear
+cat /var/log/flask_restAPI.err.log 
+pip install flask
+clear
+sudo systemctl start flask_RESTapi.service
+sudo systemctl statusflask_RESTapi.service
+sudo systemctl status flask_RESTapi.service
+colpear
+clear
+vim /etc/systemd/system/flask_RESTapi.service 
+git add .
+git commit -m "Setup ProcessManager for Flask Server"
+git push 
+clear
+flask_status
+source .bashrc
+flask_status
+source .bashrc
+flask_status
+clear
+git add .
+git commit -m "Improve Alias Commands"
+git push 
+clear
+flask_start
+flask_restart
+clear
+flask_stop
+clear
+flask_start
+flask_stop
+clear
+gita ddw .
+git add .
+git commit -m "(Temp) Removal of Error Handlign"
+git push 
+clear
+df -h
+cl,ear
+clear
+flask_start
+flask_statys
+flask_status
+clear
+ls static/
+clear
+server_stop
+flask_stop
+python3 src/app.py 
+clear
+python3 src/app.py 
+clera
+clear
+flask_start
+flask_restart
+flask_edit
+flask_restart
+systemcyl daemon-reload
+systemctl daemon-reload
+clear
+flask_restart
+flask_status
+qc
+clear
+flask_start
+flask_log
+ckear
+clear
+flask_stop
+flask_edit
+flask_start
+systemctl daemon-reload
+flask_stop
+clear
+flask_start
+flask_stop
+exiot
+exit
+python3 src/app.py 
+pip install flask
+clear
+sudo systemctl start flask_RESTapi.service
+sudo systemctl status flask_RESTapi.service
+sudo systemctl stop flask_RESTapi.service
+exit

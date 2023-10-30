@@ -25,12 +25,12 @@ def main():
 @app.route('/image/upload', methods=['POST'])
 def upload_file():
     # check if the post request has the file part
-    if 'img' not in request.files:
+    if 'imageFile' not in request.files:
         resp = jsonify({'message' : 'No file part in the request'})
         resp.status_code = 400
         return resp
  
-    file = request.files['img']
+    file = request.files['imageFile']
      
     errors = {}
     success = False
