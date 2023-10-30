@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 
 def segment_hand(bg, target_img, threshold=45):
     def segment(image):
@@ -26,4 +27,16 @@ def segment_hand(bg, target_img, threshold=45):
 
     return gray_img
     
+def compare_image(image1, image2):
+    gray_image1 = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
+    gray_image2 = cv2.cvtColor(image2, cv2.COLOR_BGR2GRAY)
 
+    def mse(img1, img2):
+        h, w = img1.shape
+        diff = cv2.subtract(img1, img2)
+        err = np.sum(diff**2)
+        mse = err/(float(h*w))
+        return mse
+    
+    mse_results = mse(gray_image1, gray_image2)
+    return mse_results

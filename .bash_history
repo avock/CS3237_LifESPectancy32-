@@ -728,3 +728,99 @@ git add ,.
 git add .
 git commit -m "Update ESP32Cam upload logic"
 git push
+git add .
+git commit 
+git commit -m ".gitignore update"
+git add .
+git commit -m ".gitignore update"
+git push
+git commit -m ".gitignore update"
+clear
+flask_start
+flask_stop
+python3 src/app.py 
+source venv/bin/activate
+python3 src/app.py 
+pip install dotenv
+ls src/ML/model/handclassifier.pt 
+pwd
+pwd src/ML/model/
+cd src/ML/model/
+pwd
+clear
+pwd
+cd ..
+l;s
+c;ear
+;s
+c;-ear
+clear
+ls
+python3 model_hand_recognition.py 
+source ~/venv/bin/activate
+python3 model_hand_recognition.py 
+ls
+clear
+htop
+top
+clear
+ls
+pip show
+pip list
+source venv/bin/activate
+pip list
+pip uninstall nvidia-cublas-cu12 nvidia-cuda-cupti-cu12 nvidia-cuda-nvrtc-cu12
+clear
+pip list
+pip uninstall nvidia-cuda-runtime-cu12
+clear
+pip uninstall nvidia-cuda-runtime-cu12
+pip list
+pip uninstall nvidia-cufft-cu12 nvidia-curand-cu12 nvidia-nccl-cu12 nvidia-nvjitlink-cu12
+clera
+pip uninstall nvidia-cufft-cu12 nvidia-curand-cu12 nvidia-nccl-cu12 nvidia-nvjitlink-cu12 nvidia-nvtx-cu12
+clear
+pip uninstall nvidia-cufft-cu12 nvidia-curand-cu12 nvidia-nccl-cu12 nvidia-nvjitlink-cu12 nvidia-nvtx-cu12
+clear
+pip lsit 
+pip list
+clear
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py \
+python3 src/ML/model_hand_recognition.py 
+ls
+cd src/ML/
+ls
+python3 src/ML/model_hand_recognition.py 
+python3 model_hand_recognition.py 
+ls
+clear
+vim model_hand_recognition.py 
+cd ~
+vim model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+;s
+ls
+vim src/ML/model/modelmodel_hand_recognition.py 
+vim src/ML/model/model/model_hand_recognition.py 
+vim src/ML/model/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+df
+clear
+pip install cv2
+pip install opencv-python
+clear

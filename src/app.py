@@ -4,8 +4,10 @@ import os
 import urllib.request
 from werkzeug.utils import secure_filename
  
+import cv2
+from ML.opencv import compare_image
+ 
 app = Flask(__name__, static_folder='../static')
-
  
 app.secret_key = "caircocoders-ednalan"
  
@@ -52,13 +54,19 @@ def upload_file():
     else:
         errors[file.filename] = 'File type is not allowed'
  
-    if success and errors:
-        errors['message'] = 'File(s) successfully uploaded'
-        resp = jsonify(errors)
-        resp.status_code = 500
-        return resp
-    if success:
-        resp = jsonify({'message' : 'Files successfully uploaded'})
+    if success and not errors:
+        
+        image1 = cv2.imread(os.path.join(app.config['UPLOAD_FOLDER'], old_filename))
+        image2 = cv2.imread(os.path.join(app.config['UPLOAD_FOLDER'], TARGET_FILENAME))
+        
+        if image1.shape != image2.shape:
+            print("Images have different dimensions. They are not directly comparable.")
+        else:
+            results = True if compare_image(image1, image2) > 0.5 else False
+        
+        resp = jsonify({
+            'message' : 'Files successfully uploaded',
+            'is_different': f'{results}'})
         resp.status_code = 201
         return resp
     else:
