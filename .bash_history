@@ -718,3 +718,13 @@ python src/ML/model_hand_recognition.py
 source venv/bin/activate
 python src/ML/model_hand_recognition.py 
 clear
+git stash
+flask_status
+mqtt_status
+clear
+flask_start
+flask_restart
+git add ,.
+git add .
+git commit -m "Update ESP32Cam upload logic"
+git push
