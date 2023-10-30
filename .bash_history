@@ -824,3 +824,23 @@ clear
 pip install cv2
 pip install opencv-python
 clear
+;s
+ls
+clear
+ls
+vim src/ML/model_hand_recognition.py 
+source venv/bin/activate
+python src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+source venv/bin/activate
+python src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python src/ML/model_hand_recognition.py 
+clear
+python src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python src/ML/model_hand_recognition.py 
+clear
+python src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python src/ML/model_hand_recognition.py 

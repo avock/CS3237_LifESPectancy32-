@@ -58,11 +58,12 @@ def upload_file():
         
         image1 = cv2.imread(os.path.join(app.config['UPLOAD_FOLDER'], old_filename))
         image2 = cv2.imread(os.path.join(app.config['UPLOAD_FOLDER'], TARGET_FILENAME))
-        
         if image1.shape != image2.shape:
             print("Images have different dimensions. They are not directly comparable.")
         else:
-            results = True if compare_image(image1, image2) > 0.5 else False
+            compare_results = compare_image(image1, image2)
+            results = True if compare_results > 30 else False
+            print(compare_results, results)
         
         resp = jsonify({
             'message' : 'Files successfully uploaded',
