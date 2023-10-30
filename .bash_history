@@ -519,3 +519,202 @@ sudo systemctl start flask_RESTapi.service
 sudo systemctl status flask_RESTapi.service
 sudo systemctl stop flask_RESTapi.service
 exit
+git add .
+git commit -m "Fix for ESP32cam"
+git push
+clear
+pip install torch
+clear
+source venv/bin/activate
+c;ear
+clear
+python src/ML/model_hand_recognition.py 
+pip install torch
+python src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+source venv/bin/activate
+pip install torch
+df
+pip list
+pip show aniso8601
+pip show scikit-learn
+clear
+pip install torchvision==0.10.0 -f https://download.pytorch.org/whl/cpu/torch_stable.html
+pip install torchvision
+pip uninstall torch
+df
+sudo du -h --max-depth=1 /dev/vda1 | sort -h
+sudo du -h  /dev/vda1 | sort -h
+clear
+cd /
+sudo du -h  /dev/vda1 | sort -h
+cd /dev/vda1
+vim /dev/vda1
+clear
+ls
+cd /dev
+ls
+cd vda1
+ll
+clear
+df
+sudo du -h --max-depth=1 / | sort -h
+ls
+clear
+sudo du -h --max-depth=2 / | sort -h
+sudo rm -r /tmp/*
+df
+clear
+sudo find /var/log -type f -name "*.log" -exec rm {} \;
+sudo apt clean
+pip cache purge
+clear
+df
+clear
+pip install torchconda install pytorch-cpu torchvision-cpu -c pytorch
+pip install torchconda install pytorch-cpu torchvision-cpu
+clear
+pip install pytorch torchvision cpuonly -c pytorch
+clear
+pip3 install torch torchvision
+df
+pip cache purge
+clear
+df
+clear
+sudo apt clean
+clear
+df
+sudo rm -r /tmp/*
+sudo find /var/log -type f -name "*.log" -exec rm {} \;
+clear
+df
+clear
+pip install pytorch-cpu torchvision-cpu
+pip3 install torch==1.9.0+cpu torchvision==0.10.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+clear
+python -m pip install torch --extra-index-url https://download.pytorch.org/whl/cpu
+pip install
+pip list
+clear
+cd ~
+python3 src/ML/model
+python3 src/ML/model.py 
+python3 src/ML/model_hand_recognition.py 
+pip install torch --extra-index-url https://download.pytorch.org/whl/cpu
+python3 src/ML/model_hand_recognition.py 
+clear
+python3 src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py sudo dmesg
+sudo demsg
+sudo dmesg
+clear
+sudo dmesg
+clear
+python3 src/ML/model_hand_recognition.py sudo dmesg
+python3 src/ML/model_hand_recognition.py
+clear
+source venv/bin/activate
+python3 src/ML/model_hand_recognition.py
+clear
+python3 src/ML/model_hand_recognition.py
+df
+clear
+python3 src/ML/model_hand_recognition.py
+pip install numpy --upgrade
+clear
+python3 src/ML/model_hand_recognition.py
+pip uninstall torch --extra-index-url https://download.pytorch.org/whl/cpu
+pip uninstall torch
+clear
+pip3 install https://download.pytorch.org/whl/cpu/torch-1.1.0-cp36-cp36m-linux_x86_64.whl
+clear
+pip install torch --extra-index-url https://download.pytorch.org/whl/cpu
+clear
+python src/ML/model_hand_recognition.py 
+df
+cl;ear
+free
+top
+clear
+python src/ML/model_hand_recognition.py 
+clear
+free -h
+top
+mqtt_status
+clear
+htop
+exit
+python3 src/ML/cv2.py 
+pip list
+source venv/bin/activate
+clear
+python3 src/ML/cv2.py 
+python3 src/ML/opencv_test.py 
+pip uninstall opencv-python
+clear
+pip uninstall opencv-contrib-python
+clear
+pip install opencv-python
+python3 src/ML/opencv_test.py 
+pip install skimage
+clear
+pip install scikig-image
+pip install scikit-image
+pip list
+;s
+ls
+python3 src/ML/model_hand_recognition.py 
+source venv/bin/activate
+python3 src/ML/model_hand_recognition.py 
+pip list
+exit()
+pip install scikit-image
+clear
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+sudo apt-get install libgl1-mesa-glx
+clear
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+ls
+ls src/ML/model_hand_recognition.py 
+ls src/ML/
+ls -a src/ML/
+rm src/ML/.model_hand_recognition.py.swp 
+clear
+ls
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+source venv/bin/activate
+clear
+python src/ML/opencv_test.py 
+clear
+python src/ML/opencv_test.py 
+clera
+python src/ML/opencv_test.py 
+clear
+python src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+source venv/bin/activate
+python3 src/ML/model_hand_recognition.py 
+clear
+python3 src/ML/model_hand_recognition.py 
+clear
+python3 src/ML/model_hand_recognition.py 
+clear
+python3 src/ML/model_hand_recognition.py 
+clear
+python3 src/ML/model_hand_recognition.py 
+source venv/bin/activate
+clear
+python src/ML/model_hand_recognition.py 
+source venv/bin/activate
+python src/ML/model_hand_recognition.py 
+clear
