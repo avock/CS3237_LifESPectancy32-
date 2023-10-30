@@ -14,8 +14,9 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
  
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
+TARGET_FILENAME = 'esp32_cam_image.jpeg'
  
-def allowed_filename(filename):
+def allowed_filetype(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
  
 @app.route('/')
@@ -35,12 +36,18 @@ def upload_file():
     errors = {}
     success = False
      
-    if file and allowed_filename(file.filename):
-        filename = secure_filename(file.filename)
+    if allowed_filetype(file.filename):
         if not os.path.exists(app.config['UPLOAD_FOLDER']):
             os.makedirs(app.config['UPLOAD_FOLDER'])
 
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        old_filename = "old_" + TARGET_FILENAME
+
+        if os.path.exists(os.path.join(app.config['UPLOAD_FOLDER'], TARGET_FILENAME)):
+
+            os.rename(os.path.join(app.config['UPLOAD_FOLDER'], TARGET_FILENAME),
+                      os.path.join(app.config['UPLOAD_FOLDER'], old_filename))
+
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'], TARGET_FILENAME))
         success = True
     else:
         errors[file.filename] = 'File type is not allowed'
