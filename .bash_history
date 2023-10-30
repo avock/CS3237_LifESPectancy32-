@@ -844,3 +844,27 @@ clear
 python src/ML/model_hand_recognition.py 
 vim src/ML/model_hand_recognition.py 
 python src/ML/model_hand_recognition.py 
+source venv/bin/activate
+c;ear
+clear
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 
+df
+htop
+python3 src/ML/model_hand_recognition.py 
+htop
+top
+qqclear
+clear
+python3 src/ML/model_hand_recognition.py 
+dmesg
+top
+clear
+python3 src/ML/model_hand_recognition.py 
+dmesg
+memory-profiler
+clear
+python3 src/ML/model_hand_recognition.py 
+vim src/ML/model_hand_recognition.py 

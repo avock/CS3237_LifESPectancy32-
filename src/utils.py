@@ -36,7 +36,7 @@ def send_telegram_message(message):
 
     try:
         response = requests.post(apiURL, json={'chat_id': chat_id, 'text': message})
-        print(response.text)
+        # print(response.text)
     except Exception as e:
         print(e)
         

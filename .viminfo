@@ -62,38 +62,48 @@ $
 |3,0,8,1,1,0,1698068871,"After=network.target"
 
 # File marks:
-'0  62  37  ~/src/ML/model_hand_recognition.py
-|4,48,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
-'1  57  26  ~/src/ML/model_hand_recognition.py
-|4,49,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
-'2  70  1  ~/src/ML/model_hand_recognition.py
-|4,50,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
-'3  67  1  ~/src/ML/model_hand_recognition.py
-|4,51,67,1,1698669783,"~/src/ML/model_hand_recognition.py"
-'4  66  1  ~/src/ML/model_hand_recognition.py
-|4,52,66,1,1698669783,"~/src/ML/model_hand_recognition.py"
-'5  63  14  ~/src/ML/model_hand_recognition.py
-|4,53,63,14,1698669071,"~/src/ML/model_hand_recognition.py"
-'6  63  14  ~/src/ML/model_hand_recognition.py
-|4,54,63,14,1698669071,"~/src/ML/model_hand_recognition.py"
-'7  63  14  ~/src/ML/model_hand_recognition.py
-|4,55,63,14,1698669071,"~/src/ML/model_hand_recognition.py"
-'8  63  14  ~/src/ML/model_hand_recognition.py
-|4,56,63,14,1698669071,"~/src/ML/model_hand_recognition.py"
-'9  61  0  ~/src/ML/model_hand_recognition.py
-|4,57,61,0,1698669045,"~/src/ML/model_hand_recognition.py"
+'0  68  0  ~/src/ML/model_hand_recognition.py
+|4,48,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
+'1  62  37  ~/src/ML/model_hand_recognition.py
+|4,49,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
+'2  57  26  ~/src/ML/model_hand_recognition.py
+|4,50,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
+'3  70  1  ~/src/ML/model_hand_recognition.py
+|4,51,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
+'4  70  1  ~/src/ML/model_hand_recognition.py
+|4,52,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
+'5  67  1  ~/src/ML/model_hand_recognition.py
+|4,53,67,1,1698669783,"~/src/ML/model_hand_recognition.py"
+'6  66  1  ~/src/ML/model_hand_recognition.py
+|4,54,66,1,1698669783,"~/src/ML/model_hand_recognition.py"
+'7  67  1  ~/src/ML/model_hand_recognition.py
+|4,55,67,1,1698669783,"~/src/ML/model_hand_recognition.py"
+'8  66  1  ~/src/ML/model_hand_recognition.py
+|4,56,66,1,1698669783,"~/src/ML/model_hand_recognition.py"
+'9  63  14  ~/src/ML/model_hand_recognition.py
+|4,57,63,14,1698669071,"~/src/ML/model_hand_recognition.py"
 
 # Jumplist (newest first):
+-'  68  0  ~/src/ML/model_hand_recognition.py
+|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
 -'  62  37  ~/src/ML/model_hand_recognition.py
 |4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
 -'  57  26  ~/src/ML/model_hand_recognition.py
 |4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
+-'  70  0  ~/src/ML/model_hand_recognition.py
+|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
 -'  70  1  ~/src/ML/model_hand_recognition.py
 |4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
 -'  67  1  ~/src/ML/model_hand_recognition.py
 |4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
+-'  67  1  ~/src/ML/model_hand_recognition.py
+|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
 -'  66  1  ~/src/ML/model_hand_recognition.py
 |4,39,66,1,1698669783,"~/src/ML/model_hand_recognition.py"
+-'  66  1  ~/src/ML/model_hand_recognition.py
+|4,39,66,1,1698669783,"~/src/ML/model_hand_recognition.py"
+-'  63  14  ~/src/ML/model_hand_recognition.py
+|4,39,63,14,1698669763,"~/src/ML/model_hand_recognition.py"
 -'  63  14  ~/src/ML/model_hand_recognition.py
 |4,39,63,14,1698669763,"~/src/ML/model_hand_recognition.py"
 -'  63  14  ~/src/ML/model_hand_recognition.py
@@ -107,7 +117,11 @@ $
 -'  61  0  ~/src/ML/model_hand_recognition.py
 |4,39,61,0,1698669060,"~/src/ML/model_hand_recognition.py"
 -'  61  0  ~/src/ML/model_hand_recognition.py
+|4,39,61,0,1698669060,"~/src/ML/model_hand_recognition.py"
+-'  61  0  ~/src/ML/model_hand_recognition.py
 |4,39,61,0,1698669045,"~/src/ML/model_hand_recognition.py"
+-'  24  0  ~/src/ML/model_hand_recognition.py
+|4,39,24,0,1698669038,"~/src/ML/model_hand_recognition.py"
 -'  24  0  ~/src/ML/model_hand_recognition.py
 |4,39,24,0,1698669038,"~/src/ML/model_hand_recognition.py"
 -'  24  0  ~/src/ML/model_hand_recognition.py
@@ -132,10 +146,18 @@ $
 |4,39,1,0,1698668827,"~/src/ML/model_hand_recognition.py"
 -'  1  0  ~/src/ML/model_hand_recognition.py
 |4,39,1,0,1698668827,"~/src/ML/model_hand_recognition.py"
+-'  1  0  ~/src/ML/model_hand_recognition.py
+|4,39,1,0,1698668827,"~/src/ML/model_hand_recognition.py"
 -'  61  48  ~/src/ML/model_hand_recognition.py
 |4,39,61,48,1698668272,"~/src/ML/model_hand_recognition.py"
 -'  1  0  ~/src/ML/model_hand_recognition.py
 |4,39,1,0,1698668243,"~/src/ML/model_hand_recognition.py"
+-'  82  58  ~/src/ML/model_hand_recognition.py
+|4,39,82,58,1698667717,"~/src/ML/model_hand_recognition.py"
+-'  83  58  ~/src/ML/model_hand_recognition.py
+|4,39,83,58,1698667717,"~/src/ML/model_hand_recognition.py"
+-'  81  58  ~/src/ML/model_hand_recognition.py
+|4,39,81,58,1698667717,"~/src/ML/model_hand_recognition.py"
 -'  87  58  ~/src/ML/model_hand_recognition.py
 |4,39,87,58,1698667717,"~/src/ML/model_hand_recognition.py"
 -'  82  58  ~/src/ML/model_hand_recognition.py
@@ -158,6 +180,12 @@ $
 |4,39,82,58,1698667717,"~/src/ML/model_hand_recognition.py"
 -'  82  58  ~/src/ML/model_hand_recognition.py
 |4,39,82,58,1698667717,"~/src/ML/model_hand_recognition.py"
+-'  85  0  ~/src/ML/model_hand_recognition.py
+|4,39,85,0,1698667296,"~/src/ML/model_hand_recognition.py"
+-'  86  0  ~/src/ML/model_hand_recognition.py
+|4,39,86,0,1698667296,"~/src/ML/model_hand_recognition.py"
+-'  84  0  ~/src/ML/model_hand_recognition.py
+|4,39,84,0,1698667296,"~/src/ML/model_hand_recognition.py"
 -'  90  0  ~/src/ML/model_hand_recognition.py
 |4,39,90,0,1698667296,"~/src/ML/model_hand_recognition.py"
 -'  85  0  ~/src/ML/model_hand_recognition.py
@@ -180,6 +208,8 @@ $
 |4,39,85,0,1698667296,"~/src/ML/model_hand_recognition.py"
 -'  85  0  ~/src/ML/model_hand_recognition.py
 |4,39,85,0,1698667296,"~/src/ML/model_hand_recognition.py"
+-'  60  0  ~/src/ML/model_hand_recognition.py
+|4,39,60,0,1698667096,"~/src/ML/model_hand_recognition.py"
 -'  65  0  ~/src/ML/model_hand_recognition.py
 |4,39,65,0,1698667096,"~/src/ML/model_hand_recognition.py"
 -'  60  0  ~/src/ML/model_hand_recognition.py
@@ -196,6 +226,8 @@ $
 |4,39,60,0,1698667096,"~/src/ML/model_hand_recognition.py"
 -'  60  0  ~/src/ML/model_hand_recognition.py
 |4,39,60,0,1698667096,"~/src/ML/model_hand_recognition.py"
+-'  59  24  ~/src/ML/model_hand_recognition.py
+|4,39,59,24,1698667095,"~/src/ML/model_hand_recognition.py"
 -'  89  24  ~/src/ML/model_hand_recognition.py
 |4,39,89,24,1698667095,"~/src/ML/model_hand_recognition.py"
 -'  64  24  ~/src/ML/model_hand_recognition.py
@@ -230,6 +262,8 @@ $
 |4,39,59,24,1698667095,"~/src/ML/model_hand_recognition.py"
 -'  59  24  ~/src/ML/model_hand_recognition.py
 |4,39,59,24,1698667063,"~/src/ML/model_hand_recognition.py"
+-'  87  0  ~/src/ML/model_hand_recognition.py
+|4,39,87,0,1698667051,"~/src/ML/model_hand_recognition.py"
 -'  91  0  ~/src/ML/model_hand_recognition.py
 |4,39,91,0,1698667051,"~/src/ML/model_hand_recognition.py"
 -'  66  0  ~/src/ML/model_hand_recognition.py
@@ -250,77 +284,47 @@ $
 |4,39,86,0,1698667051,"~/src/ML/model_hand_recognition.py"
 -'  61  0  ~/src/ML/model_hand_recognition.py
 |4,39,61,0,1698667051,"~/src/ML/model_hand_recognition.py"
--'  86  0  ~/src/ML/model_hand_recognition.py
-|4,39,86,0,1698667051,"~/src/ML/model_hand_recognition.py"
--'  61  0  ~/src/ML/model_hand_recognition.py
-|4,39,61,0,1698667051,"~/src/ML/model_hand_recognition.py"
--'  61  0  ~/src/ML/model_hand_recognition.py
-|4,39,61,0,1698667051,"~/src/ML/model_hand_recognition.py"
--'  61  0  ~/src/ML/model_hand_recognition.py
-|4,39,61,0,1698667041,"~/src/ML/model_hand_recognition.py"
--'  60  0  ~/src/ML/model_hand_recognition.py
-|4,39,60,0,1698667029,"~/src/ML/model_hand_recognition.py"
--'  60  0  ~/src/ML/model_hand_recognition.py
-|4,39,60,0,1698667029,"~/src/ML/model_hand_recognition.py"
--'  83  24  ~/src/ML/model_hand_recognition.py
-|4,39,83,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  63  24  ~/src/ML/model_hand_recognition.py
-|4,39,63,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  78  24  ~/src/ML/model_hand_recognition.py
-|4,39,78,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  58  24  ~/src/ML/model_hand_recognition.py
-|4,39,58,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  79  24  ~/src/ML/model_hand_recognition.py
-|4,39,79,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  77  24  ~/src/ML/model_hand_recognition.py
-|4,39,77,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  58  24  ~/src/ML/model_hand_recognition.py
-|4,39,58,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  78  24  ~/src/ML/model_hand_recognition.py
-|4,39,78,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  77  24  ~/src/ML/model_hand_recognition.py
-|4,39,77,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  58  24  ~/src/ML/model_hand_recognition.py
-|4,39,58,24,1698666968,"~/src/ML/model_hand_recognition.py"
--'  78  24  ~/src/ML/model_hand_recognition.py
-|4,39,78,24,1698666968,"~/src/ML/model_hand_recognition.py"
 
 # History of marks within files (newest to oldest):
 
 > ~/src/ML/model_hand_recognition.py
-	*	1698668291	0
-	"	62	37
-	^	62	38
-	.	62	37
+	*	1698670057	0
+	"	68	0
+	^	70	2
+	.	70	2
 	+	1	0
 	+	4	0
 	+	5	0
 	+	6	0
-	+	9	0
-	+	56	0
-	+	55	17
-	+	56	0
-	+	55	18
-	+	56	0
+	+	8	0
+	+	55	0
+	+	54	17
+	+	55	0
+	+	54	18
+	+	55	0
 	+	1	11
-	+	56	34
-	+	90	25
+	+	55	34
+	+	85	25
 	+	1	18
-	+	90	24
-	+	81	10
-	+	82	21
-	+	91	0
-	+	89	24
-	+	80	0
-	+	84	32
-	+	85	34
+	+	85	24
+	+	76	10
+	+	77	21
 	+	86	0
-	+	88	0
-	+	62	24
-	+	59	0
-	+	61	48
-	+	6	9
-	+	62	37
+	+	84	24
+	+	75	0
+	+	79	32
+	+	80	34
+	+	81	0
+	+	83	0
+	+	61	0
+	+	62	0
+	+	63	14
+	+	64	0
+	+	66	0
+	+	67	0
+	+	68	1
+	+	69	2
+	+	70	2
 
 > ~/src/ML/model/model_hand_recognition.py
 	*	1698666065	0

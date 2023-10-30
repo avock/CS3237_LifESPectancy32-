@@ -6,10 +6,14 @@ from werkzeug.utils import secure_filename
  
 import cv2
 from ML.opencv import compare_image
+
+from mqtt_server import MQTTServer
  
 app = Flask(__name__, static_folder='../static')
  
-app.secret_key = "caircocoders-ednalan"
+# app.secret_key = "caircocoders-ednalan"
+mqtt_server = MQTTServer()
+mqtt_server.start()
  
 UPLOAD_FOLDER = os.path.join('static')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -23,6 +27,11 @@ def allowed_filetype(filename):
  
 @app.route('/')
 def main():
+    return 'Homepage'
+ 
+@app.route('/esp32toggle')
+def esp32_test():
+    mqtt_server.trigger()
     return 'Homepage'
  
 @app.route('/image/upload', methods=['POST'])
