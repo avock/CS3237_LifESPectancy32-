@@ -32,7 +32,7 @@ def main():
 @app.route('/esp32toggle')
 def esp32_test():
     mqtt_server.trigger()
-    return 'Homepage'
+    return 'ESP32 Was Triggered!'
  
 @app.route('/image/upload', methods=['POST'])
 def upload_file():
@@ -100,6 +100,10 @@ def download_file(image_filename):
 @app.route('/<path:path>')
 def fallback(path):
     return "Wrong Endpoint!"
+ 
+@app.route('/cam_output')
+def some_func():
+    return 'some output'
  
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)

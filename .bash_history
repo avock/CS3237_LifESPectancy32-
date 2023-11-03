@@ -868,3 +868,100 @@ memory-profiler
 clear
 python3 src/ML/model_hand_recognition.py 
 vim src/ML/model_hand_recognition.py 
+source venv/bin/activate
+python src/app.py 
+lsof -i :5000
+kill 165220
+clear
+python src/app.py 
+lsof -i :5000
+kill -9 165220
+clear
+python src/app.py 
+lsof -i :5000
+kill -9 165651
+c;ear
+
+python src/app.py 
+clear
+git add .
+git commit -m "Add Image Difference Comparator"
+git push
+clear
+mqtt_start
+mqtt_stop
+clea
+clear
+python src/app.py 
+clear
+git add .
+git commit -m "Add Compare_image function"
+git push
+clear
+python src/app.py 
+clear
+python src/app.py 
+pip install paho-mqtt
+clear
+python src/app.py 
+pip install dotenv
+clear
+pip install python-dotenv
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+git add .
+git commit -m "Update MQTTServer Class"
+git push
+python src/app.py 
+clear
+python src/app.py 
+clear
+flask_start
+flask_restart
+flask_status
+flask_edit
+flask_stop
+flask_status
+c;ear
+flask_start
+python src/app.py 
+clear
+cat /var/logs/
+flask_edit
+cd /var/log/
+clear ~
+cd ~
+cat /var/log/flask_restAPI.out.log 
+cat /var/log/flask_restAPI.err.log 
+flask_edit
+clear
+ls
+source ~/venv/bin/activate
+clear
+chmod +x run_script.sh
+chmod +x flask_start.sh
+clear
+./flask_start.sh 
+clear
+flask_edit
+sudo systemctl daemon-reload
+flask_start
+flask_stop
+flask_start
+flask_restart
+flask_stop
+clear
+flask_start
+flask_stop
+flask_start
+exit
+flask_start
+flask_stop
+exit
+flask_start
+flask_restart
+clear
+flask_status

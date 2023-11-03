@@ -31,11 +31,11 @@ class MQTTServer:
         write_to_csv(CSV_FILENAME, JSON_KEYS, data)
         send_telegram_message(data)
         
-        client.publish(ESP32_PUBLISH_TOPIC, "1")
+        # client.publish(ESP32_PUBLISH_TOPIC, "1")
         
     def trigger(self):
         send_telegram_message('ESP32 is triggered')
-        self.client.publish(ESP32_PUBLISH_TOPIC, "")
+        self.client.publish(ESP32_PUBLISH_TOPIC, "1")
 
     def start(self):
         self.client.loop_start()
