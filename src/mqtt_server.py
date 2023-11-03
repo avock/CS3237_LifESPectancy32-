@@ -21,6 +21,7 @@ class MQTTServer:
     def on_connect(self, client, userdata, flags, rc):
         print(f"Connected with result code: {str(rc)}")
         print(f"Subscribed to topic: {ESP32_SUBSCRIBE_TOPIC}")
+        send_telegram_message('ESP32 is up and running!')
         client.subscribe(ESP32_SUBSCRIBE_TOPIC)
 
     def on_message(self, client, userdata, message):
