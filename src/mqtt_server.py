@@ -33,9 +33,9 @@ class MQTTServer:
         
         # client.publish(ESP32_PUBLISH_TOPIC, "1")
         
-    def trigger(self):
+    def trigger(self, message='1'):
         send_telegram_message('ESP32 is triggered')
-        self.client.publish(ESP32_PUBLISH_TOPIC, "1")
+        self.client.publish(ESP32_PUBLISH_TOPIC, message)
 
     def start(self):
         self.client.loop_start()

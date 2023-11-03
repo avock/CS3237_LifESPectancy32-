@@ -3,6 +3,8 @@ from flask import Flask, json, request, jsonify, redirect, url_for
 import os
 import urllib.request
 from werkzeug.utils import secure_filename
+import requests
+import json
  
 import cv2
 from ML.opencv import compare_image
@@ -33,69 +35,20 @@ def main():
 def esp32_test():
     mqtt_server.trigger()
     return 'ESP32 Was Triggered!'
- 
-@app.route('/image/upload', methods=['POST'])
-def upload_file():
-    # check if the post request has the file part
-    if 'imageFile' not in request.files:
-        resp = jsonify({'message' : 'No file part in the request'})
-        resp.status_code = 400
-        return resp
- 
-    file = request.files['imageFile']
-     
-    errors = {}
-    success = False
-     
-    if allowed_filetype(file.filename):
-        if not os.path.exists(app.config['UPLOAD_FOLDER']):
-            os.makedirs(app.config['UPLOAD_FOLDER'])
 
-        old_filename = "old_" + TARGET_FILENAME
+@app.route('/gestures', methods = ['POST'])
+def gesture_toggle():
+    data = request.get_json()
+    gesture_value = data.get("gesture")
 
-        if os.path.exists(os.path.join(app.config['UPLOAD_FOLDER'], TARGET_FILENAME)):
+    mqtt_server.trigger(gesture_value)
 
-            os.rename(os.path.join(app.config['UPLOAD_FOLDER'], TARGET_FILENAME),
-                      os.path.join(app.config['UPLOAD_FOLDER'], old_filename))
-
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], TARGET_FILENAME))
-        success = True
-    else:
-        errors[file.filename] = 'File type is not allowed'
- 
-    if success and not errors:
-        
-        image1 = cv2.imread(os.path.join(app.config['UPLOAD_FOLDER'], old_filename))
-        image2 = cv2.imread(os.path.join(app.config['UPLOAD_FOLDER'], TARGET_FILENAME))
-        if image1.shape != image2.shape:
-            print("Images have different dimensions. They are not directly comparable.")
-        else:
-            compare_results = compare_image(image1, image2)
-            results = True if compare_results > 30 else False
-            print(compare_results, results)
-        
-        resp = jsonify({
-            'message' : 'Files successfully uploaded',
-            'is_different': f'{results}'})
-        resp.status_code = 201
-        return resp
-    else:
-        resp = jsonify(errors)
-        resp.status_code = 500
-        return resp
- 
-@app.route('/image/download/<image_filename>')
-def download_file(image_filename):
-    filename = secure_filename(image_filename)
-    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-
-    # TODO : To re-add check for file existence
-    # if not os.path.exists(file_path):
-    #     error_response = {'error': 'File not found'}
-    #     return jsonify(error_response), 404
-
-    static_image_url = url_for('static', filename=image_filename)
-    return redirect(static_image_url)
+    resp = jsonify({
+        'message': 'message received, esp32 is notified',
+        'gesture_received': gesture_value
+    })
+    resp.status_code = 200
+    return resp
 
 @app.route('/<path:path>')
 def fallback(path):
@@ -104,6 +57,6 @@ def fallback(path):
 @app.route('/cam_output')
 def some_func():
     return 'some output'
- 
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
