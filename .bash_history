@@ -965,3 +965,62 @@ flask_start
 flask_restart
 clear
 flask_status
+flask_stop
+clear
+flask_status
+clear
+mqtt_status
+clear
+git add .
+git commit -m "null"
+git push
+flask_start
+flask_stop
+python3 src/app.py 
+source venv/bin/activate
+python3 src/app.py 
+python3 src/app.pyclear
+python3 src/app.py 
+clear
+python3 src/app.py 
+clear
+python3 src/app.py 
+claer
+clear
+python3 src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+claer
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+git add .
+git commit -m ""
+git commit -m "Add Gesture Handling"
+git push
+clera
+clear
+flask_start
+clear
+flask_stop
+clear
+flask_start
+flask_stop
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+git add .
+git commit -m "Add AE Model"
+git push
