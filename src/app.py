@@ -40,9 +40,8 @@ def esp32_test():
 def gesture_toggle():
     data = request.get_json()
     gesture_value = data.get("gesture")
-    
     mqtt_server.trigger(gesture_value)
-
+    print(f'gesture received: {gesture_value}')
     resp = jsonify({
         'message': 'message received, esp32 is notified',
         'gesture_received': gesture_value

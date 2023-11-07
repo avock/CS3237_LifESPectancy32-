@@ -1024,3 +1024,22 @@ clear
 git add .
 git commit -m "Add AE Model"
 git push
+flask_start
+flask_stop
+clear
+source src/app.py 
+clear
+source venv/bin/activate
+clear
+python src/app.py 
+clear
+git add .
+git commit -m "na"
+git push
+source venv/bin/activate
+clear
+python src/app.py 
+clear
+python src/app.py 
+source venv/bin/activate
+python src/app.py 

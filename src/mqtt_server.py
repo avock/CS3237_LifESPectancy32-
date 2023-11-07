@@ -30,6 +30,7 @@ class MQTTServer:
 
         data = process_json_payload(payload_json, JSON_KEYS)
         write_to_csv(CSV_FILENAME, JSON_KEYS, data)
+        
         send_telegram_message(data)
         
         # client.publish(ESP32_PUBLISH_TOPIC, "1")
