@@ -3,15 +3,9 @@ import csv
 from dotenv import load_dotenv
 import requests
 
-load_dotenv()
+import constants
 
-TEST_HEADERS = ['header1', 'header2', 'header3']
-TEST_DATA = {
-    'header1': 'value1',
-    'header2': 'value2',
-    'header3': 'value3'
-}
-MAX_ROWS = 70
+load_dotenv()
 
 bot_token = os.environ.get("BOT_TOKEN")
 chat_id = os.environ.get("CHAT_ID_CK")
