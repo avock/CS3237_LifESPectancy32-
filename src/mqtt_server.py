@@ -8,7 +8,7 @@ from utils import write_to_csv, send_telegram_message, process_json_payload
 ERROR_MESSAGE = "ESP32_ERROR"
 ESP32_SUBSCRIBE_TOPIC = "home/input"
 ESP32_PUBLISH_TOPIC = "home/response"
-CSV_FILENAME = "test.csv"
+CSV_FILENAME = "esp32_main.csv"
 JSON_KEYS = ["photoresistor", "pir_state", "ultrasonic_distance_cm", "temperature", "humidity"]
 
 class MQTTServer:
