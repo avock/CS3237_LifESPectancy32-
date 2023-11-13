@@ -11,7 +11,7 @@ from ML.opencv import compare_image
 
 from mqtt_server import MQTTServer
 
-import constants
+from constants import *
  
 app = Flask(__name__, static_folder='../static')
  

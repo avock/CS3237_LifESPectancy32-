@@ -1043,3 +1043,48 @@ clear
 python src/app.py 
 source venv/bin/activate
 python src/app.py 
+clear
+source venv/bin/activate
+clear
+git add .
+git commit -m "Update csv method"
+git add .
+git commit -m "Update csv method"
+git pus
+git push
+clear
+git add .
+git commit -m remove .csv from git"
+git push
+git commit -m "remove .csv from git"
+git push
+clear
+python src/mqtt_server.py 
+git push
+clear
+python src/mqtt_server.py 
+git add .
+git commit -m "Code Refactoring"
+git push
+clear
+flask_start
+flask_stop
+claer
+clear
+python src/app.py 
+clear
+python src/test.py 
+clear
+python src/app.py 
+clear
+flask_start 
+flask_stop
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+flask_stop
+clear
+logout
