@@ -2,6 +2,8 @@ import os
 import csv
 from dotenv import load_dotenv
 import requests
+import pandas as pd
+import json
 
 from constants import *
 
@@ -51,6 +53,18 @@ def write_to_csv(csv_dynamic, csv_main, headers=TEST_HEADERS, data=TEST_DATA):
     with open(csv_main_path, mode='a', newline='') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow([data.get(header, '') for header in headers])
+      
+def read_csv(target_csv, number_of_rows):
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.abspath(os.path.join(script_dir, ".."))
+    data_dir = os.path.join(parent_dir, "data")
+    csv_dynamic_path = os.path.join(data_dir, target_csv)
+    
+    df = pd.read_csv(csv_dynamic_path, names=JSON_KEYS)
+    rows_df = df.tail(number_of_rows).to_dict(orient = 'records')
+    features_lists = [[row[key] for row in rows_df] for key in JSON_KEYS]
+
+    return features_lists
             
 def send_telegram_message(message):
     apiURL = f'https://api.telegram.org/bot{bot_token}/sendMessage'

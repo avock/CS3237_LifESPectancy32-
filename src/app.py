@@ -10,7 +10,7 @@ import cv2
 from ML.opencv import compare_image
 
 from mqtt_server import MQTTServer
-
+from utils import read_csv
 from constants import *
  
 app = Flask(__name__, static_folder='../static')
@@ -44,6 +44,16 @@ def gesture_toggle():
         'message': 'message received, esp32 is notified',
         'gesture_received': gesture_value
     })
+    resp.status_code = 200
+    return resp
+
+@app.route('/data', methods = ['GET'])
+def get_esp32_data():
+    esp32_data = read_csv('esp32_dynamic.csv', 50)
+    data = {}
+    for i in range(len(JSON_KEYS)):
+        data[JSON_KEYS[i]] = esp32_data[i]
+    resp = jsonify(data)
     resp.status_code = 200
     return resp
 
