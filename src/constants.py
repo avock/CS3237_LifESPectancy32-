@@ -2,7 +2,9 @@
 ERROR_MESSAGE = "ESP32_ERROR"
 ESP32_SUBSCRIBE_TOPIC = "home/input"
 ESP32_PUBLISH_TOPIC = "home/response"
-CSV_FILENAME = "esp32_main.csv"
+DYNAMIC_CSV_FILENAME = "esp32_dynamic.csv"
+MASTER_CSV_FILENAME = "esp32_main.csv"
+ROWS_TO_KEEP = 70
 JSON_KEYS = ["photoresistor", "pir_state", "ultrasonic_distance_cm", "temperature", "humidity"]
 
 # ESP32cam related

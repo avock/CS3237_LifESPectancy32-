@@ -10,19 +10,41 @@ load_dotenv()
 bot_token = os.environ.get("BOT_TOKEN")
 chat_id = os.environ.get("CHAT_ID_CK")
  
-def write_to_csv(csv_filename, headers=TEST_HEADERS, data=TEST_DATA):
+def write_to_csv(csv_dynamic, csv_main, headers=TEST_HEADERS, data=TEST_DATA):
     script_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.abspath(os.path.join(script_dir, ".."))
     data_dir = os.path.join(parent_dir, "data")
     os.makedirs(data_dir, exist_ok=True)
-    csv_file_path = os.path.join(data_dir, csv_filename)
+    
+    csv_dynamic_path = os.path.join(data_dir, csv_dynamic)
+    csv_main_path = os.path.join(data_dir, csv_main)
 
-    if not os.path.isfile(csv_file_path):
-        with open(csv_file_path, mode='w', newline='') as csv_file:
+    # csv files do not currently exist
+    if not os.path.isfile(csv_dynamic_path):
+        with open(csv_dynamic_path, mode='w', newline='') as csv_file:
+            writer = csv.writer(csv_file)
+            writer.writerow(headers)
+    if not os.path.isfile(csv_main_path):
+        with open(csv_main_path, mode='w', newline='') as csv_file:
             writer = csv.writer(csv_file)
             writer.writerow(headers)
 
-    with open(csv_file_path, mode='a', newline='') as csv_file:
+    # write to dynamic (only 70 rows of data) csv
+    with open(csv_dynamic_path, mode='a', newline='') as csv_dynamic_file:
+        dynamic_writer = csv.writer(csv_dynamic_file)
+        dynamic_writer.writerow([data.get(header, '') for header in headers])
+
+        # Read the existing data in the dynamic CSV
+        with open(csv_dynamic_path, mode='r') as csv_dynamic_read_file:
+            dynamic_reader = csv.reader(csv_dynamic_read_file)
+            dynamic_data = list(dynamic_reader)
+
+        # If the dynamic CSV exceeds 70 rows (excluding headers), remove the oldest row
+        if len(dynamic_data) > ROWS_TO_KEEP:
+            dynamic_data = dynamic_data[-ROWS_TO_KEEP:]
+            
+    # write to main csv (contains all data over time)
+    with open(csv_main_path, mode='a', newline='') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow([data.get(header, '') for header in headers])
             
