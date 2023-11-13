@@ -25,7 +25,7 @@ class MQTTServer:
         payload_json = json.loads(payload_str)
 
         data = process_json_payload(payload_json, JSON_KEYS)
-        write_to_csv(DYNAMIC_CSV_FILENAME, JSON_KEYS, data)
+        write_to_csv(DYNAMIC_CSV_FILENAME, MASTER_CSV_FILENAME, JSON_KEYS, data)
         
         send_telegram_message(data)
         

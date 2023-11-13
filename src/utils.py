@@ -40,8 +40,12 @@ def write_to_csv(csv_dynamic, csv_main, headers=TEST_HEADERS, data=TEST_DATA):
             dynamic_data = list(dynamic_reader)
 
         # If the dynamic CSV exceeds 70 rows (excluding headers), remove the oldest row
-        if len(dynamic_data) > ROWS_TO_KEEP:
-            dynamic_data = dynamic_data[-ROWS_TO_KEEP:]
+        if len(dynamic_data) >= ROWS_TO_KEEP:
+            dynamic_data = dynamic_data[-(ROWS_TO_KEEP-1):]
+            
+        with open(csv_dynamic_path, mode='w', newline='') as csv_dynamic_file:
+            dynamic_writer = csv.writer(csv_dynamic_file)
+            dynamic_writer.writerows(dynamic_data)
             
     # write to main csv (contains all data over time)
     with open(csv_main_path, mode='a', newline='') as csv_file:
