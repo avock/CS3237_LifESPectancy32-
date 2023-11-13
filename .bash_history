@@ -1088,3 +1088,97 @@ clear
 flask_stop
 clear
 logout
+clear
+mqtt_status
+clear
+flask_status
+clear
+git add .
+git commit -m "wip"
+git push
+clear
+git add .
+git commit -m "Update CSV Write Function"
+git push
+clear
+logout
+clear
+source venv/bin/activate
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+flask_start
+flask_stop
+clear
+flask_stop
+flask_start
+clear
+flask_start
+flask_stop
+python src/app.py 
+clear
+python src/app.py 
+clear
+git add .
+git commit -m "Add Dynamic CSV Update"
+git push
+clear
+python test.py 
+clear
+python test.py 
+clear
+python test.py 
+pip install pandas
+clear
+python test.py 
+clear
+python test.py 
+clea3r
+clear
+python test.py 
+clear
+python test.py 
+clear
+python test.py 
+cl;ear
+clear
+python test.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+git add .
+git commit -m "Add Fetch Data Endpoint"
+git push
+clear

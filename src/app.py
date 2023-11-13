@@ -10,8 +10,10 @@ import cv2
 from ML.opencv import compare_image
 
 from mqtt_server import MQTTServer
+
 from utils import read_csv
 from constants import *
+from utils import *
  
 app = Flask(__name__, static_folder='../static')
  
@@ -37,13 +39,20 @@ def esp32_test():
 @app.route('/gestures', methods = ['POST'])
 def gesture_toggle():
     data = request.get_json()
-    gesture_value = data.get("gesture")
-    mqtt_server.trigger(gesture_value)
-    print(f'gesture received: {gesture_value}')
+    gesture = data.get("gesture")
+    
+    mqtt_server.trigger(gesture)
+    # POC showing that telegram messaging works
+    send_telegram_message(f'Gesture Received: {gesture}')
+    
+    print(f'Gesture Received: {gesture}')
+    
     resp = jsonify({
         'message': 'message received, esp32 is notified',
-        'gesture_received': gesture_value
+        'gesture_received': gesture
     })
+    
+    
     resp.status_code = 200
     return resp
 
