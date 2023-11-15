@@ -1336,3 +1336,50 @@ python src/ML/model.py
 git add .
 git commit -m "ML Deployment Skeletal Code"
 git push
+ls
+uptime
+top
+clear
+mpstat
+htop
+clear
+git add .
+git commit -m "ML Deployment Skeletal Code"
+git push
+ckear
+clear
+cd src/
+ls
+ls -a
+git add .
+git commit -m "ML Deployment Skeletal"
+git push
+cd ..
+ls
+clear
+git pull
+clear
+git push
+git remote add origin https://github.com/avock/CS3237_LifESPectancy32-.git
+git remote add origin https://github.com/avock/CS3237_LifES
+clear
+git push
+clear
+git remote -v
+git commits
+got list
+git list
+git l
+git tree
+git log
+clear
+git push
+git remote add origin git@github.com:avock/CS3237_LifESPectancy32-.git
+git remote set-url origin git@github.com:avock/CS3237_LifESPectancy32-.git
+git push
+git remote set-url origin https://github.com/avock/CS3237_LifESPectancy32-.git
+git push
+clear
+lgout
+logout
+exit
