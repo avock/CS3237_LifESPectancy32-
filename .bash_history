@@ -1434,3 +1434,39 @@ clear
 python src/test.py 
 clear
 python src/test.py 
+git add .
+git commit -m "Add Anomaly Endpoint"
+git push
+source venv/bin/activate
+python src/app.py 
+clear
+ls
+python src/app.py 
+clea
+python src/test.py
+vim src/ML/model.py 
+vim src/test.py
+python src/test.py
+clear
+python src/app.py
+vim src/app.py
+python src/app.py
+clear
+vim src/app.py
+python src/app.py
+vim src/app.py
+python src/app.py
+clear
+python src/app.py
+vim src/app.py
+python src/app.py
+vim src/app.py
+python src/app.py
+cklear
+clear
+python src/app.py
+clear
+python src/app.py
+source venv/bin/activate
+python src/test.py 
+clear

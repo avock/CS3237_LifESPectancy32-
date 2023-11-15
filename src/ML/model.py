@@ -89,7 +89,6 @@ class RegModel:
             
             predictions = predictions.reshape(-1, 1)
             
-            print(feature, predictions)
             mse = mean_squared_error(feature_test_data, predictions)
             
             features_mse[feature] = mse

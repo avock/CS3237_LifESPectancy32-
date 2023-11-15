@@ -66,11 +66,11 @@ def read_csv(number_of_rows):
     csv_dynamic_path = os.path.join(data_dir, target_csv)
     csv_dynamic_path_pressure = os.path.join(data_dir, pressure_csv)
     
-    df = pd.read_csv(csv_dynamic_path, names=JSON_KEYS)
+    df = pd.read_csv(csv_dynamic_path, names=JSON_KEYS).dropna()
     rows_df = df.tail(number_of_rows).to_dict(orient = 'records')
     features_lists = [[row[key] for row in rows_df] for key in JSON_KEYS]
     
-    df = pd.read_csv(csv_dynamic_path_pressure, names=PRESSURE_JSON_KEYS)
+    df = pd.read_csv(csv_dynamic_path_pressure, names=PRESSURE_JSON_KEYS).dropna()
     rows_df = df.tail(number_of_rows).to_dict(orient = 'records')
     new_row = [row[key] for row in rows_df for key in PRESSURE_JSON_KEYS] 
     features_lists.append(new_row)

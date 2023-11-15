@@ -34,7 +34,7 @@ def allowed_filetype(filename):
  
 @app.route('/')
 def main():
-    return model.test()
+    return "LifeESP32tancy+++ GO GO GO"
  
 @app.route('/esp32toggle')
 def esp32_test():
