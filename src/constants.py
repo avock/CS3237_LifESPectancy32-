@@ -3,12 +3,12 @@ ERROR_MESSAGE = "ESP32_ERROR"
 ROWS_TO_KEEP = 70
 ESP32_PUBLISH_TOPIC = "home/response"
 
-GLOBAL_JSON_KEYS = ["temperature", "humidity", "time", "ultrasonic", "pir_state", 'pressure']
+GLOBAL_JSON_KEYS = ["light", "temperature", "humidity", "time", "ultrasonic", "pir_state", 'pressure']
 
 FEATURE_COLS = ['pir', 'light', 'ultrasonic', 'pressure', 'temperature', 'humidity']
 
 ESP32_SUBSCRIBE_TOPIC = "home/input"
-JSON_KEYS = ["temperature", "humidity", "time", "ultrasonic", "pir_state"]
+JSON_KEYS = ["light", "temperature", "humidity", "time", "ultrasonic", "pir_state"]
 DYNAMIC_CSV_FILENAME = "esp32_dynamic.csv"
 MASTER_CSV_FILENAME = "esp32_main.csv"
 

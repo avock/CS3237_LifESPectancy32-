@@ -15,7 +15,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1700039623,,"wq"
+|2,0,1700048704,,"wq"
 :q
 |2,0,1698681098,,"q"
 :w
@@ -37,65 +37,79 @@ $
 
 # Registers:
 ""1	LINE	0
-	        print('test2')
-|3,1,1,1,1,0,1700039574,"        print('test2')"
+	            print(cols, len(read_csv(1)), idx)
+|3,1,1,1,1,0,1700048703,"            print(cols, len(read_csv(1)), idx)"
 "2	LINE	0
-	        print('test1')
-|3,0,2,1,1,0,1700039572,"        print('test1')"
+	        print('test2')
+|3,0,2,1,1,0,1700039574,"        print('test2')"
 "3	LINE	0
-	print('test2')
-|3,0,3,1,1,0,1700039571,"print('test2')"
+	        print('test1')
+|3,0,3,1,1,0,1700039572,"        print('test1')"
 "4	LINE	0
 	print('test2')
-	
-|3,0,4,1,2,0,1700039569,"print('test2')",""
+|3,0,4,1,1,0,1700039571,"print('test2')"
 "5	LINE	0
-	print('test1')
-|3,0,5,1,1,0,1700039567,"print('test1')"
+	print('test2')
+	
+|3,0,5,1,2,0,1700039569,"print('test2')",""
 "6	LINE	0
-	print(target_img)
-|3,0,6,1,1,0,1698669063,"print(target_img)"
+	print('test1')
+|3,0,6,1,1,0,1700039567,"print('test1')"
 "7	LINE	0
-	print(bg)
-|3,0,7,1,1,0,1698669044,"print(bg)"
+	print(target_img)
+|3,0,7,1,1,0,1698669063,"print(target_img)"
 "8	LINE	0
-	from skimage import io
-|3,0,8,1,1,0,1698667040,"from skimage import io"
+	print(bg)
+|3,0,8,1,1,0,1698669044,"print(bg)"
 "9	LINE	0
-	model = CNNModel()
-|3,0,9,1,1,0,1698665834,"model = CNNModel()"
+	from skimage import io
+|3,0,9,1,1,0,1698667040,"from skimage import io"
 
 # File marks:
-'0  29  16  ~/src/ML/model.py
-|4,48,29,16,1700039623,"~/src/ML/model.py"
-'1  35  22  ~/src/app.py
-|4,49,35,22,1700039589,"~/src/app.py"
-'2  21  8  ~/src/ML/model.py
-|4,50,21,8,1700039576,"~/src/ML/model.py"
-'3  21  8  ~/src/ML/model.py
-|4,51,21,8,1700039576,"~/src/ML/model.py"
-'4  21  24  ~/src/app.py
-|4,52,21,24,1700039553,"~/src/app.py"
-'5  21  24  ~/src/app.py
-|4,53,21,24,1700039553,"~/src/app.py"
-'6  5  29  /etc/systemd/system/flask_RESTapi.service
-|4,54,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
-'7  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,55,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
-'8  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,56,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
-'9  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,57,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+'0  63  12  ~/src/ML/model.py
+|4,48,63,12,1700048704,"~/src/ML/model.py"
+'1  29  16  ~/src/ML/model.py
+|4,49,29,16,1700039623,"~/src/ML/model.py"
+'2  29  16  ~/src/ML/model.py
+|4,50,29,16,1700039623,"~/src/ML/model.py"
+'3  35  22  ~/src/app.py
+|4,51,35,22,1700039589,"~/src/app.py"
+'4  21  8  ~/src/ML/model.py
+|4,52,21,8,1700039576,"~/src/ML/model.py"
+'5  21  8  ~/src/ML/model.py
+|4,53,21,8,1700039576,"~/src/ML/model.py"
+'6  21  8  ~/src/ML/model.py
+|4,54,21,8,1700039576,"~/src/ML/model.py"
+'7  21  8  ~/src/ML/model.py
+|4,55,21,8,1700039576,"~/src/ML/model.py"
+'8  21  24  ~/src/app.py
+|4,56,21,24,1700039553,"~/src/app.py"
+'9  21  24  ~/src/app.py
+|4,57,21,24,1700039553,"~/src/app.py"
 
 # Jumplist (newest first):
+-'  63  12  ~/src/ML/model.py
+|4,39,63,12,1700048704,"~/src/ML/model.py"
+-'  29  16  ~/src/ML/model.py
+|4,39,29,16,1700048660,"~/src/ML/model.py"
 -'  29  16  ~/src/ML/model.py
 |4,39,29,16,1700039623,"~/src/ML/model.py"
+-'  21  8  ~/src/ML/model.py
+|4,39,21,8,1700039617,"~/src/ML/model.py"
 -'  21  8  ~/src/ML/model.py
 |4,39,21,8,1700039617,"~/src/ML/model.py"
 -'  35  22  ~/src/app.py
 |4,39,35,22,1700039589,"~/src/app.py"
 -'  35  22  ~/src/app.py
 |4,39,35,22,1700039589,"~/src/app.py"
+-'  35  22  ~/src/app.py
+|4,39,35,22,1700039589,"~/src/app.py"
+-'  35  22  ~/src/app.py
+|4,39,35,22,1700039589,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039578,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039578,"~/src/app.py"
 -'  21  24  ~/src/app.py
 |4,39,21,24,1700039578,"~/src/app.py"
 -'  21  24  ~/src/app.py
@@ -110,12 +124,24 @@ $
 |4,39,12,0,1700039570,"~/src/ML/model.py"
 -'  12  0  ~/src/ML/model.py
 |4,39,12,0,1700039570,"~/src/ML/model.py"
+-'  12  0  ~/src/ML/model.py
+|4,39,12,0,1700039570,"~/src/ML/model.py"
 -'  1  0  ~/src/ML/model.py
 |4,39,1,0,1700039564,"~/src/ML/model.py"
 -'  1  0  ~/src/ML/model.py
 |4,39,1,0,1700039564,"~/src/ML/model.py"
 -'  1  0  ~/src/ML/model.py
 |4,39,1,0,1700039564,"~/src/ML/model.py"
+-'  1  0  ~/src/ML/model.py
+|4,39,1,0,1700039564,"~/src/ML/model.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039553,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039553,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039553,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039553,"~/src/app.py"
 -'  21  24  ~/src/app.py
 |4,39,21,24,1700039553,"~/src/app.py"
 -'  21  24  ~/src/app.py
@@ -136,6 +162,50 @@ $
 |4,39,1,0,1700039535,"~/src/app.py"
 -'  1  0  ~/src/app.py
 |4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
 -'  5  29  /etc/systemd/system/flask_RESTapi.service
 |4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
 -'  5  29  /etc/systemd/system/flask_RESTapi.service
@@ -201,106 +271,37 @@ $
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
 |4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 
 # History of marks within files (newest to oldest):
 
 > ~/src/ML/model.py
-	*	1700039623	0
-	"	29	16
+	*	1700048703	0
+	"	63	12
 	^	29	17
-	.	29	16
+	.	63	0
 	+	4	0
 	+	10	0
 	+	14	0
 	+	21	0
 	+	29	16
+	+	63	0
 
 > ~/src/app.py
 	*	1700039589	0

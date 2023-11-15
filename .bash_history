@@ -1383,3 +1383,31 @@ clear
 lgout
 logout
 exit
+ls
+git add .
+git commit -m "wip"
+git push
+clear
+source venv/bin/activate
+python src/ML/model
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clearf
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
