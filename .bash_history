@@ -1411,3 +1411,13 @@ python src/ML/model.py
 clear
 python src/ML/model.py 
 clear
+clea
+clear
+source venv/bin/activate
+python src/ML/model.py 
+vim src/ML/model.py 
+python src/ML/model.py \
+python src/ML/model.py
+git add .
+git commit -m "ML model deployment skeletal"
+git push
