@@ -54,7 +54,7 @@ def write_to_csv(csv_dynamic, csv_main, headers=TEST_HEADERS, data=TEST_DATA):
         writer = csv.writer(csv_file)
         writer.writerow([data.get(header, '') for header in headers])
       
-def read_csv(target_csv, number_of_rows):
+def read_csv(number_of_rows):
     
     target_csv = 'esp32_dynamic.csv'
     pressure_csv = 'esp32_dynamic_pressure.csv'

@@ -5,6 +5,8 @@ ESP32_PUBLISH_TOPIC = "home/response"
 
 GLOBAL_JSON_KEYS = ["temperature", "humidity", "time", "ultrasonic", "pir_state", 'pressure']
 
+FEATURE_COLS = ['pir', 'light', 'ultrasonic', 'pressure', 'temperature', 'humidity']
+
 ESP32_SUBSCRIBE_TOPIC = "home/input"
 JSON_KEYS = ["temperature", "humidity", "time", "ultrasonic", "pir_state"]
 DYNAMIC_CSV_FILENAME = "esp32_dynamic.csv"

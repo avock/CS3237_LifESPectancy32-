@@ -15,7 +15,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1698681354,,"wq"
+|2,0,1700039623,,"wq"
 :q
 |2,0,1698681098,,"q"
 :w
@@ -37,255 +37,278 @@ $
 
 # Registers:
 ""1	LINE	0
-	print(target_img)
-|3,1,1,1,1,0,1698669063,"print(target_img)"
+	        print('test2')
+|3,1,1,1,1,0,1700039574,"        print('test2')"
 "2	LINE	0
-	print(bg)
-|3,0,2,1,1,0,1698669044,"print(bg)"
+	        print('test1')
+|3,0,2,1,1,0,1700039572,"        print('test1')"
 "3	LINE	0
-	from skimage import io
-|3,0,3,1,1,0,1698667040,"from skimage import io"
+	print('test2')
+|3,0,3,1,1,0,1700039571,"print('test2')"
 "4	LINE	0
-	model = CNNModel()
-|3,0,4,1,1,0,1698665834,"model = CNNModel()"
+	print('test2')
+	
+|3,0,4,1,2,0,1700039569,"print('test2')",""
 "5	LINE	0
-	WorkingDirectory=/root/src
-|3,0,5,1,1,0,1698599643,"WorkingDirectory=/root/src"
+	print('test1')
+|3,0,5,1,1,0,1700039567,"print('test1')"
 "6	LINE	0
-	User=root
-|3,0,6,1,1,0,1698068893,"User=root"
+	print(target_img)
+|3,0,6,1,1,0,1698669063,"print(target_img)"
 "7	LINE	0
-	WorkingDirectory=~
-|3,0,7,1,1,0,1698068892,"WorkingDirectory=~"
+	print(bg)
+|3,0,7,1,1,0,1698669044,"print(bg)"
 "8	LINE	0
-	After=network.target
-|3,0,8,1,1,0,1698068871,"After=network.target"
+	from skimage import io
+|3,0,8,1,1,0,1698667040,"from skimage import io"
+"9	LINE	0
+	model = CNNModel()
+|3,0,9,1,1,0,1698665834,"model = CNNModel()"
 
 # File marks:
-'0  5  29  /etc/systemd/system/flask_RESTapi.service
-|4,48,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
-'1  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,49,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
-'2  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,50,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
-'3  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,51,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
-'4  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,52,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
-'5  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,53,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
-'6  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,54,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+'0  29  16  ~/src/ML/model.py
+|4,48,29,16,1700039623,"~/src/ML/model.py"
+'1  35  22  ~/src/app.py
+|4,49,35,22,1700039589,"~/src/app.py"
+'2  21  8  ~/src/ML/model.py
+|4,50,21,8,1700039576,"~/src/ML/model.py"
+'3  21  8  ~/src/ML/model.py
+|4,51,21,8,1700039576,"~/src/ML/model.py"
+'4  21  24  ~/src/app.py
+|4,52,21,24,1700039553,"~/src/app.py"
+'5  21  24  ~/src/app.py
+|4,53,21,24,1700039553,"~/src/app.py"
+'6  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,54,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
 '7  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,55,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+|4,55,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
 '8  7  21  /etc/systemd/system/flask_RESTapi.service
-|4,56,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
-'9  68  0  ~/src/ML/model_hand_recognition.py
-|4,57,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
+|4,56,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+'9  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,57,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
 
 # Jumplist (newest first):
+-'  29  16  ~/src/ML/model.py
+|4,39,29,16,1700039623,"~/src/ML/model.py"
+-'  21  8  ~/src/ML/model.py
+|4,39,21,8,1700039617,"~/src/ML/model.py"
+-'  35  22  ~/src/app.py
+|4,39,35,22,1700039589,"~/src/app.py"
+-'  35  22  ~/src/app.py
+|4,39,35,22,1700039589,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039578,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039578,"~/src/app.py"
+-'  21  8  ~/src/ML/model.py
+|4,39,21,8,1700039576,"~/src/ML/model.py"
+-'  21  8  ~/src/ML/model.py
+|4,39,21,8,1700039576,"~/src/ML/model.py"
+-'  12  0  ~/src/ML/model.py
+|4,39,12,0,1700039570,"~/src/ML/model.py"
+-'  12  0  ~/src/ML/model.py
+|4,39,12,0,1700039570,"~/src/ML/model.py"
+-'  12  0  ~/src/ML/model.py
+|4,39,12,0,1700039570,"~/src/ML/model.py"
+-'  1  0  ~/src/ML/model.py
+|4,39,1,0,1700039564,"~/src/ML/model.py"
+-'  1  0  ~/src/ML/model.py
+|4,39,1,0,1700039564,"~/src/ML/model.py"
+-'  1  0  ~/src/ML/model.py
+|4,39,1,0,1700039564,"~/src/ML/model.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039553,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039553,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039553,"~/src/app.py"
+-'  21  24  ~/src/app.py
+|4,39,21,24,1700039553,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  1  0  ~/src/app.py
+|4,39,1,0,1700039535,"~/src/app.py"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
+-'  5  29  /etc/systemd/system/flask_RESTapi.service
+|4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
 -'  5  29  /etc/systemd/system/flask_RESTapi.service
 |4,39,5,29,1698681354,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
 |4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681335,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
 |4,39,7,21,1698681098,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
 |4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
 -'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698679071,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
 |4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  68  0  ~/src/ML/model_hand_recognition.py
-|4,39,68,0,1698677950,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  62  37  ~/src/ML/model_hand_recognition.py
-|4,39,62,37,1698676213,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  57  26  ~/src/ML/model_hand_recognition.py
-|4,39,57,26,1698674739,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  0  ~/src/ML/model_hand_recognition.py
-|4,39,70,0,1698670051,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  70  1  ~/src/ML/model_hand_recognition.py
-|4,39,70,1,1698669846,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
--'  67  1  ~/src/ML/model_hand_recognition.py
-|4,39,67,1,1698669832,"~/src/ML/model_hand_recognition.py"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
+-'  7  21  /etc/systemd/system/flask_RESTapi.service
+|4,39,7,21,1698678906,"/etc/systemd/system/flask_RESTapi.service"
 
 # History of marks within files (newest to oldest):
+
+> ~/src/ML/model.py
+	*	1700039623	0
+	"	29	16
+	^	29	17
+	.	29	16
+	+	4	0
+	+	10	0
+	+	14	0
+	+	21	0
+	+	29	16
+
+> ~/src/app.py
+	*	1700039589	0
+	"	35	22
+	^	35	23
+	.	35	22
+	+	21	24
+	+	35	22
 
 > /etc/systemd/system/flask_RESTapi.service
 	*	1698681353	0

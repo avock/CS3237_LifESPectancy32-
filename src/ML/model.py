@@ -1,14 +1,30 @@
-import pickle
-from sklearn.linear_model import LinearRegression
+import os, sys, joblib
+import xgboost as xgb
 
-# Sample data (height in centimeters and corresponding weight in kilograms)
-# 1 inch = 2.54 cm
-# 1 pound = 0.453592 kg
-height_cm = [[152.4], [157.48], [162.56], [167.64], [172.72], [177.8], [182.88]]
-weight_kg = [49.895, 54.431, 58.967, 63.502, 68.038, 72.574, 77.110]
+# workaround for library import issue
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
+from utils import read_csv
+from constants import FEATURE_COLS
 
-model = LinearRegression()
-model.fit(height_cm, weight_kg)
+class RegressionModel:
+    def __init__(self):
+        
+        models_folder = 'models'
+        
+        self.loaded_models = {}
+        for feature in FEATURE_COLS:
+            model_filename = os.path.join('src', 'ML', models_folder, f'{feature}_model.pkl')
+            self.loaded_models[feature] = joblib.load(model_filename)
 
-with open('test_model.pkl', 'wb') as model_file:
-    pickle.dump(model, model_file)
+        self.get_data = read_csv
+    
+    def predict(self, new_data):
+        predictions = {}
+        for feature, model in self.loaded_models.items():
+            predictions[feature] = model.predict(new_data[['hour_of_day', 'minute_of_day']])
+        return predictions
+    
+    def test(self):
+        return 'test'

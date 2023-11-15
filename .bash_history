@@ -1271,3 +1271,57 @@ python src/app.py
 clear
 flask_status
 clear
+git add .
+git commit -m "Support Multiple ESP32 Data Collection"
+git push
+clear
+source venv/bin/activate
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+pip install xgboost
+clear
+pip install xgboost
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+python src/app.py 
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
+python src/ML/model.py 
+clear
+python src/app.py
+clear
+python src/ML/model.py 
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+ls
+cd src/
+cd ..
+ls
+clear
+python3 src/app.py 
+source venv/bin/activate
+python3 src/app.py 
+vim src/app.py 
+python3 src/app.py 
+vim src/ML/model.py 
+vim src/app.py 
+python3 src/app.py 
+vim src/ML/model.py 
+python3 src/app.py 
+flask_start
+flask_stop
+clear

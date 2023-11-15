@@ -14,9 +14,12 @@ from mqtt_server import MQTTServer
 from utils import read_csv
 from constants import *
 from utils import *
+from ML.model import *
  
 app = Flask(__name__, static_folder='../static')
- 
+
+model = RegressionModel()
+
 mqtt_server = MQTTServer()
 mqtt_server.start()
  
@@ -29,7 +32,7 @@ def allowed_filetype(filename):
  
 @app.route('/')
 def main():
-    return 'Homepage'
+    return model.test()
  
 @app.route('/esp32toggle')
 def esp32_test():
@@ -57,7 +60,7 @@ def gesture_toggle():
 
 @app.route('/data', methods = ['GET'])
 def get_esp32_data():
-    esp32_data = read_csv('esp32_dynamic.csv', 60)
+    esp32_data = read_csv(60)
     data = {}
     for i in range(len(GLOBAL_JSON_KEYS)):
         data[GLOBAL_JSON_KEYS[i]] = esp32_data[i]
