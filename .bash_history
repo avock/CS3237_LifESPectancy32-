@@ -1480,3 +1480,34 @@ source venv/bin/activate
 clear
 python src/app.py 
 clear
+source venv/bin/activate
+python src/test.py 
+clear
+python src/test.py 
+clear
+python src/app.py
+flask_start
+flask_stop
+vim src/app.py
+python src/app.py
+vim src/app.py
+python src/app.py
+vim src/app.py
+flask_start
+flask_stop
+clear
+git add .
+git commit -m "Add Scheduler to Endpoint Trigger"
+git push
+clear
+flask_start
+flask_stop
+clear
+source venv/bin/activate
+python src/app.py 
+clear
+python src/app.py 
+clear
+flask_start
+flask_stop
+clear

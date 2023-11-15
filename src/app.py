@@ -61,9 +61,25 @@ def anomaly_check():
 def gesture_toggle():
     data = request.get_json()
     gesture = data.get("gesture")
-    mqtt_server.trigger(gesture)
+    print(gesture)
+    
+    if gesture == 'Palm':
+        mqtt_server.trigger('1')
+        
+    elif gesture == 'Fist':
+        mqtt_server.trigger('0')
+        
+    elif gesture == 'Cheese':
+        send_telegram_message('Alls goodzzzzz')    
+    
+    elif gesture == 'Thumbs Up':
+        send_telegram_message('Halp me')
+        
+    else:
+        send_telegram_message('Something went wrong')
+    
     # POC showing that telegram messaging works
-    send_telegram_message(f'Gesture Received: {gesture}')
+    # send_telegram_message(f'Gesture Received: {gesture}')
     
     print(f'Gesture Received: {gesture}')
     
