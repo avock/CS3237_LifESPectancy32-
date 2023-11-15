@@ -1511,3 +1511,12 @@ clear
 flask_start
 flask_stop
 clear
+ls
+cat src/app.py 
+clear
+python3 src/app.py 
+source venv/bin/activate
+python3 src/app.py 
+git add .
+git commit -m "Update Gesture Logic"
+git push
