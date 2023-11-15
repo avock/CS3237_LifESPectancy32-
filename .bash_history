@@ -1182,3 +1182,92 @@ git add .
 git commit -m "Add Fetch Data Endpoint"
 git push
 clear
+flask_start
+flask_stop
+source venv/bin/activate
+python src/app.py 
+clear
+flask_start
+flask_restart
+flask_sotp
+flask_stop
+python src/app.py 
+clear
+python src/app.py 
+clear
+flask start
+flask_start
+flask_restart
+flask_stop
+clear
+git add .
+git commit -m "Update Code for Gesture Recognition"
+git push
+source venv/bin/activate
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clera
+clear
+clera
+clear
+python src/app.py 
+clera
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clear
+python src/app.py
+clearclear
+clear
+python src/app.py
+clear
+flask_start
+flask_restart
+flask_stop
+python src/app.py
+clear
+python src/app.py
+clear
+flask_status
+clear

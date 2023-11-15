@@ -17,15 +17,28 @@ class MQTTServer:
     def on_connect(self, client, userdata, flags, rc):
         print(f"Connected with result code: {str(rc)}")
         print(f"Subscribed to topic: {ESP32_SUBSCRIBE_TOPIC}")
+        print(f"Subscribed to topic: {PRESSURE_ESP32_SUBSCRIBE_TOPIC}")
         send_telegram_message('ESP32 is up and running!')
         client.subscribe(ESP32_SUBSCRIBE_TOPIC)
+        client.subscribe(PRESSURE_ESP32_SUBSCRIBE_TOPIC)
 
     def on_message(self, client, userdata, message):
         payload_str = message.payload.decode('utf-8')
         payload_json = json.loads(payload_str)
+        
+        topic = message.topic
 
-        data = process_json_payload(payload_json, JSON_KEYS)
-        write_to_csv(DYNAMIC_CSV_FILENAME, MASTER_CSV_FILENAME, JSON_KEYS, data)
+        data = process_json_payload(payload_json, GLOBAL_JSON_KEYS)
+        
+        resources = {
+            "main": (DYNAMIC_CSV_FILENAME, MASTER_CSV_FILENAME, JSON_KEYS),
+            "pressure": (PRESSURE_DYNAMIC_CSV_FILENAME, PRESSURE_MASTER_CSV_FILENAME, PRESSURE_JSON_KEYS)
+        }
+        
+        if topic == ESP32_SUBSCRIBE_TOPIC:
+            write_to_csv(csv_dynamic=DYNAMIC_CSV_FILENAME, csv_main=MASTER_CSV_FILENAME, headers=JSON_KEYS, data=data)
+        elif topic == PRESSURE_ESP32_SUBSCRIBE_TOPIC:
+            write_to_csv(csv_dynamic=PRESSURE_DYNAMIC_CSV_FILENAME, csv_main=PRESSURE_MASTER_CSV_FILENAME, headers=PRESSURE_JSON_KEYS, data=data)
         
         # send_telegram_message(data)
         

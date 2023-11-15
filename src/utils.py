@@ -55,14 +55,25 @@ def write_to_csv(csv_dynamic, csv_main, headers=TEST_HEADERS, data=TEST_DATA):
         writer.writerow([data.get(header, '') for header in headers])
       
 def read_csv(target_csv, number_of_rows):
+    
+    target_csv = 'esp32_dynamic.csv'
+    pressure_csv = 'esp32_dynamic_pressure.csv'
+    
     script_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.abspath(os.path.join(script_dir, ".."))
     data_dir = os.path.join(parent_dir, "data")
+    
     csv_dynamic_path = os.path.join(data_dir, target_csv)
+    csv_dynamic_path_pressure = os.path.join(data_dir, pressure_csv)
     
     df = pd.read_csv(csv_dynamic_path, names=JSON_KEYS)
     rows_df = df.tail(number_of_rows).to_dict(orient = 'records')
     features_lists = [[row[key] for row in rows_df] for key in JSON_KEYS]
+    
+    df = pd.read_csv(csv_dynamic_path_pressure, names=PRESSURE_JSON_KEYS)
+    rows_df = df.tail(number_of_rows).to_dict(orient = 'records')
+    new_row = [row[key] for row in rows_df for key in PRESSURE_JSON_KEYS] 
+    features_lists.append(new_row)
 
     return features_lists
             

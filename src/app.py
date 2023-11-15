@@ -40,7 +40,6 @@ def esp32_test():
 def gesture_toggle():
     data = request.get_json()
     gesture = data.get("gesture")
-    
     mqtt_server.trigger(gesture)
     # POC showing that telegram messaging works
     send_telegram_message(f'Gesture Received: {gesture}')
@@ -58,10 +57,10 @@ def gesture_toggle():
 
 @app.route('/data', methods = ['GET'])
 def get_esp32_data():
-    esp32_data = read_csv('esp32_dynamic.csv', 50)
+    esp32_data = read_csv('esp32_dynamic.csv', 60)
     data = {}
-    for i in range(len(JSON_KEYS)):
-        data[JSON_KEYS[i]] = esp32_data[i]
+    for i in range(len(GLOBAL_JSON_KEYS)):
+        data[GLOBAL_JSON_KEYS[i]] = esp32_data[i]
     resp = jsonify(data)
     resp.status_code = 200
     return resp
