@@ -1520,3 +1520,15 @@ python3 src/app.py
 git add .
 git commit -m "Update Gesture Logic"
 git push
+clear
+git add .
+git commit -m "Gesture-ESP32 Logic"
+git push
+clear
+source venv/bin/activate
+python src/app.py 
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear

@@ -102,13 +102,19 @@ def get_esp32_data():
     resp.status_code = 200
     return resp
 
+@app.route('/dashboard', methods = ['GET'])
+def get_dashboard_data():
+    esp32_data = read_csv(1)
+    data = {}
+    for i in range(len(GLOBAL_JSON_KEYS)):
+        data[GLOBAL_JSON_KEYS[i]] = esp32_data[i]
+    resp = jsonify(data)
+    resp.status_code = 200
+    return resp
+
 @app.route('/<path:path>')
 def fallback(path):
     return "Wrong Endpoint!"
  
-@app.route('/cam_output')
-def some_func():
-    return 'some output'
-
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
