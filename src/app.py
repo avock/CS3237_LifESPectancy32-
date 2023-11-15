@@ -14,12 +14,14 @@ from mqtt_server import MQTTServer
 from utils import read_csv
 from constants import *
 from utils import *
-from ML.model import *
+from ML.model import RegModel
  
 app = Flask(__name__, static_folder='../static')
 
-model = RegressionModel()
+# ML Model Initialization
+model = RegModel()
 
+# MQTT Server Initialization
 mqtt_server = MQTTServer()
 mqtt_server.start()
  
@@ -38,6 +40,15 @@ def main():
 def esp32_test():
     mqtt_server.trigger()
     return 'ESP32 Was Triggered!'
+
+@app.route('/anomaly', methods = ['GET'])
+def anomaly_check():
+    df = model.read_data()
+    results = model.get_mse(df)
+    resp = jsonify(results)
+    resp.status_code = 200
+    
+    return resp
 
 @app.route('/gestures', methods = ['POST'])
 def gesture_toggle():

@@ -1421,3 +1421,16 @@ python src/ML/model.py
 git add .
 git commit -m "ML model deployment skeletal"
 git push
+git add .
+git commit -m "ML Deployment Skeletal"
+git push
+clear
+source venv/bin/activate
+python src/app.py 
+python src/test.py 
+source venv/bin/activate
+python src/test.py 
+clear
+python src/test.py 
+clear
+python src/test.py 

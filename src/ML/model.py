@@ -72,30 +72,26 @@ class RegModel:
         
         return df
     
-    def predict(self, df):
+    def get_mse(self, df):
         features_mse = {}
 
         for feature in FEATURE_COLS:
             feature_test_data = df.loc[:, feature]
-            loaded_model = regression_model.loaded_models[feature]
+            loaded_model = self.loaded_models[feature]
             
             predictions = loaded_model.predict(df[['hour_of_day', 'minute_of_day']])
             if feature not in ['temperature', 'humidity']:
-                upper_threshold = regression_model.feature_thresholds[feature]['upper']
-                lower_threshold = regression_model.feature_thresholds[feature]['lower']
+                upper_threshold = self.feature_thresholds[feature]['upper']
+                lower_threshold = self.feature_thresholds[feature]['lower']
 
                 predictions = np.where(predictions > upper_threshold, 1, predictions)
                 predictions = np.where(predictions < lower_threshold, 0, predictions)
             
             predictions = predictions.reshape(-1, 1)
             
+            print(feature, predictions)
             mse = mean_squared_error(feature_test_data, predictions)
             
             features_mse[feature] = mse
             
         return features_mse
-    
-regression_model = RegModel()
-df = regression_model.read_data()
-results = regression_model.predict(df)
-print(results)
