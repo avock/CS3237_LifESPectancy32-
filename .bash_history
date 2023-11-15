@@ -1470,3 +1470,13 @@ python src/app.py
 source venv/bin/activate
 python src/test.py 
 clear
+git add .
+git commit -m "Add Nan Handling for CSV"
+git push
+clear
+source venv/bin/activate
+pip install apscheduler
+source venv/bin/activate
+clear
+python src/app.py 
+clear

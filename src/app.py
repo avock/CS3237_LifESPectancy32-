@@ -1,5 +1,6 @@
 #app.py
 from flask import Flask, json, request, jsonify, redirect, url_for
+from apscheduler.schedulers.background import BackgroundScheduler
 import os
 import urllib.request
 from werkzeug.utils import secure_filename
@@ -25,6 +26,10 @@ model = RegModel()
 mqtt_server = MQTTServer()
 mqtt_server.start()
  
+scheduler = BackgroundScheduler(daemon=True)
+scheduler.add_job(func=lambda: requests.get('http://127.0.0.1:5000/anomaly'), trigger='interval', minutes=1)
+scheduler.start()
+ 
 UPLOAD_FOLDER = os.path.join('static')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
@@ -45,7 +50,9 @@ def esp32_test():
 def anomaly_check():
     df = model.read_data()
     results = model.get_mse(df)
+    send_telegram_message(results)
     resp = jsonify(results)
+    
     resp.status_code = 200
     
     return resp

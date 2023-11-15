@@ -60,12 +60,10 @@ class RegModel:
     def read_data(self):
         results = {}
         for idx, cols in enumerate(GLOBAL_JSON_KEYS):
-            results[cols] = read_csv(5)[idx]
+            results[cols] = read_csv(3)[idx]
 
         df = pd.DataFrame(results)
         df = df_time_preprocess(df)
-        df['pir'] = df['pir_state']
-        df = df.drop(columns = ['pir_state'])
         
         non_feature_cols = [col for col in df.columns if col not in FEATURE_COLS]
         df = df[FEATURE_COLS + non_feature_cols]

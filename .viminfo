@@ -15,7 +15,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1700050605,,"wq"
+|2,0,1700051892,,"wq"
 :q
 |2,0,1700050491,,"q"
 :w
@@ -37,63 +37,91 @@ $
 
 # Registers:
 ""1	LINE	0
-	    resp.status_code = 200
-|3,1,1,1,1,0,1700050324,"    resp.status_code = 200"
+	    print('/anomaly triggered')
+|3,1,1,1,1,0,1700051889,"    print('/anomaly triggered')"
 "2	LINE	0
-	    resp = results
-|3,0,2,1,1,0,1700050324,"    resp = results"
+	    send_telegram_message(resp)
+|3,0,2,1,1,0,1700051632,"    send_telegram_message(resp)"
 "3	LINE	0
-	            print(cols, len(read_csv(1)), idx)
-|3,0,3,1,1,0,1700048703,"            print(cols, len(read_csv(1)), idx)"
+	    resp.status_code = 200
+|3,0,3,1,1,0,1700050324,"    resp.status_code = 200"
 "4	LINE	0
-	        print('test2')
-|3,0,4,1,1,0,1700039574,"        print('test2')"
+	    resp = results
+|3,0,4,1,1,0,1700050324,"    resp = results"
 "5	LINE	0
-	        print('test1')
-|3,0,5,1,1,0,1700039572,"        print('test1')"
+	            print(cols, len(read_csv(1)), idx)
+|3,0,5,1,1,0,1700048703,"            print(cols, len(read_csv(1)), idx)"
 "6	LINE	0
-	print('test2')
-|3,0,6,1,1,0,1700039571,"print('test2')"
+	        print('test2')
+|3,0,6,1,1,0,1700039574,"        print('test2')"
 "7	LINE	0
+	        print('test1')
+|3,0,7,1,1,0,1700039572,"        print('test1')"
+"8	LINE	0
+	print('test2')
+|3,0,8,1,1,0,1700039571,"print('test2')"
+"9	LINE	0
 	print('test2')
 	
-|3,0,7,1,2,0,1700039569,"print('test2')",""
-"8	LINE	0
-	print('test1')
-|3,0,8,1,1,0,1700039567,"print('test1')"
-"9	LINE	0
-	print(target_img)
-|3,0,9,1,1,0,1698669063,"print(target_img)"
+|3,0,9,1,2,0,1700039569,"print('test2')",""
 
 # File marks:
-'0  46  23  ~/src/app.py
-|4,48,46,23,1700050605,"~/src/app.py"
-'1  47  26  ~/src/app.py
-|4,49,47,26,1700050588,"~/src/app.py"
-'2  47  26  ~/src/app.py
-|4,50,47,26,1700050588,"~/src/app.py"
-'3  48  15  ~/src/app.py
-|4,51,48,15,1700050491,"~/src/app.py"
-'4  48  15  ~/src/app.py
-|4,52,48,15,1700050491,"~/src/app.py"
-'5  48  15  ~/src/app.py
-|4,53,48,15,1700050491,"~/src/app.py"
-'6  48  15  ~/src/app.py
-|4,54,48,15,1700050491,"~/src/app.py"
-'7  50  17  ~/src/app.py
-|4,55,50,17,1700050331,"~/src/app.py"
-'8  50  17  ~/src/app.py
-|4,56,50,17,1700050331,"~/src/app.py"
-'9  50  17  ~/src/app.py
-|4,57,50,17,1700050331,"~/src/app.py"
+'0  56  4  ~/src/app.py
+|4,48,56,4,1700051892,"~/src/app.py"
+'1  53  32  ~/src/app.py
+|4,49,53,32,1700051648,"~/src/app.py"
+'2  53  32  ~/src/app.py
+|4,50,53,32,1700051648,"~/src/app.py"
+'3  56  28  ~/src/app.py
+|4,51,56,28,1700051570,"~/src/app.py"
+'4  56  28  ~/src/app.py
+|4,52,56,28,1700051570,"~/src/app.py"
+'5  56  28  ~/src/app.py
+|4,53,56,28,1700051570,"~/src/app.py"
+'6  46  23  ~/src/app.py
+|4,54,46,23,1700050605,"~/src/app.py"
+'7  46  23  ~/src/app.py
+|4,55,46,23,1700050605,"~/src/app.py"
+'8  46  23  ~/src/app.py
+|4,56,46,23,1700050605,"~/src/app.py"
+'9  46  23  ~/src/app.py
+|4,57,46,23,1700050605,"~/src/app.py"
 
 # Jumplist (newest first):
+-'  56  4  ~/src/app.py
+|4,39,56,4,1700051892,"~/src/app.py"
+-'  53  32  ~/src/app.py
+|4,39,53,32,1700051885,"~/src/app.py"
+-'  53  32  ~/src/app.py
+|4,39,53,32,1700051648,"~/src/app.py"
+-'  56  28  ~/src/app.py
+|4,39,56,28,1700051619,"~/src/app.py"
+-'  56  28  ~/src/app.py
+|4,39,56,28,1700051570,"~/src/app.py"
+-'  46  23  ~/src/app.py
+|4,39,46,23,1700051555,"~/src/app.py"
+-'  46  23  ~/src/app.py
+|4,39,46,23,1700051555,"~/src/app.py"
+-'  46  23  ~/src/app.py
+|4,39,46,23,1700051555,"~/src/app.py"
 -'  46  23  ~/src/app.py
 |4,39,46,23,1700050605,"~/src/app.py"
 -'  47  26  ~/src/app.py
 |4,39,47,26,1700050599,"~/src/app.py"
 -'  47  26  ~/src/app.py
+|4,39,47,26,1700050599,"~/src/app.py"
+-'  47  26  ~/src/app.py
+|4,39,47,26,1700050599,"~/src/app.py"
+-'  47  26  ~/src/app.py
+|4,39,47,26,1700050599,"~/src/app.py"
+-'  47  26  ~/src/app.py
 |4,39,47,26,1700050588,"~/src/app.py"
+-'  48  15  ~/src/app.py
+|4,39,48,15,1700050570,"~/src/app.py"
+-'  48  15  ~/src/app.py
+|4,39,48,15,1700050570,"~/src/app.py"
+-'  48  15  ~/src/app.py
+|4,39,48,15,1700050570,"~/src/app.py"
 -'  48  15  ~/src/app.py
 |4,39,48,15,1700050570,"~/src/app.py"
 -'  48  15  ~/src/app.py
@@ -107,7 +135,19 @@ $
 -'  50  17  ~/src/app.py
 |4,39,50,17,1700050373,"~/src/app.py"
 -'  50  17  ~/src/app.py
+|4,39,50,17,1700050373,"~/src/app.py"
+-'  50  17  ~/src/app.py
+|4,39,50,17,1700050373,"~/src/app.py"
+-'  50  17  ~/src/app.py
+|4,39,50,17,1700050373,"~/src/app.py"
+-'  50  17  ~/src/app.py
 |4,39,50,17,1700050331,"~/src/app.py"
+-'  49  10  ~/src/app.py
+|4,39,49,10,1700050308,"~/src/app.py"
+-'  49  10  ~/src/app.py
+|4,39,49,10,1700050308,"~/src/app.py"
+-'  49  10  ~/src/app.py
+|4,39,49,10,1700050308,"~/src/app.py"
 -'  49  10  ~/src/app.py
 |4,39,49,10,1700050308,"~/src/app.py"
 -'  49  10  ~/src/app.py
@@ -128,6 +168,12 @@ $
 |4,39,35,14,1700050285,"~/src/app.py"
 -'  35  14  ~/src/app.py
 |4,39,35,14,1700050285,"~/src/app.py"
+-'  35  14  ~/src/app.py
+|4,39,35,14,1700050285,"~/src/app.py"
+-'  35  14  ~/src/app.py
+|4,39,35,14,1700050285,"~/src/app.py"
+-'  35  14  ~/src/app.py
+|4,39,35,14,1700050285,"~/src/app.py"
 -'  7  22  ~/src/test.py
 |4,39,7,22,1700049465,"~/src/test.py"
 -'  7  22  ~/src/test.py
@@ -192,110 +238,64 @@ $
 |4,39,7,22,1700049465,"~/src/test.py"
 -'  7  22  ~/src/test.py
 |4,39,7,22,1700049465,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  1  0  ~/src/test.py
-|4,39,1,0,1700049456,"~/src/test.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
--'  75  14  ~/src/ML/model.py
-|4,39,75,14,1700049448,"~/src/ML/model.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
+-'  7  22  ~/src/test.py
+|4,39,7,22,1700049465,"~/src/test.py"
 
 # History of marks within files (newest to oldest):
 
 > ~/src/app.py
-	*	1700050605	0
-	"	46	23
-	^	46	24
-	.	46	23
+	*	1700051890	0
+	"	56	4
+	^	53	33
+	.	56	0
 	+	21	24
 	+	35	22
 	+	49	11
@@ -306,6 +306,10 @@ $
 	+	46	22
 	+	47	26
 	+	46	23
+	+	56	28
+	+	55	0
+	+	53	32
+	+	56	0
 
 > ~/src/test.py
 	*	1700049464	0
