@@ -1325,3 +1325,14 @@ python3 src/app.py
 flask_start
 flask_stop
 clear
+source venv/bin/activate
+clear
+ls
+rm test_model.pkl 
+clear
+python src/app.py 
+clear
+python src/ML/model.py 
+git add .
+git commit -m "ML Deployment Skeletal Code"
+git push
