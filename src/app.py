@@ -49,7 +49,7 @@ def esp32_test():
 @app.route('/anomaly', methods = ['GET'])
 def anomaly_check():
     df = model.read_data()
-    results = model.get_mse(df)
+    results = model.get_error(df)
     send_telegram_message(results)
     resp = jsonify(results)
     

@@ -1532,3 +1532,21 @@ python src/app.py
 clear
 python src/app.py 
 clear
+ls
+clear
+flask_status
+clear
+lear
+ls
+clear
+ls
+source venv/bin/activate
+vim src/app.py 
+git add .
+git commit -m "Add /dashboard endpoint"
+git push
+clear
+source venv/bin/activate
+python src/app.py 
+python src/app.py \
+python src/app.py

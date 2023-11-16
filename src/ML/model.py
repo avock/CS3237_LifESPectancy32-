@@ -2,7 +2,7 @@ import os, sys, joblib
 import pandas as pd
 import numpy as np
 # import xgboost as xgb
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # workaround for library import issue
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -37,8 +37,8 @@ class RegModel:
         'light': {'lower': 0.3, 'upper': 0.6},
         'ultrasonic': {'lower': 0.2, 'upper': 0.4},
         'pressure': {'lower': 0.3, 'upper': 0.7},
-        'temperature': {'lower': 0.2, 'upper': 0.8},
-        'humidity': {'lower': 0.2, 'upper': 0.8},
+        # 'temperature': {'lower': 0.2, 'upper': 0.8},
+        # 'humidity': {'lower': 0.2, 'upper': 0.8},
     }
     
     def __init__(self):
@@ -70,8 +70,8 @@ class RegModel:
         
         return df
     
-    def get_mse(self, df):
-        features_mse = {}
+    def get_error(self, df):
+        features_error = {}
 
         for feature in FEATURE_COLS:
             feature_test_data = df.loc[:, feature]
@@ -85,10 +85,14 @@ class RegModel:
                 predictions = np.where(predictions > upper_threshold, 1, predictions)
                 predictions = np.where(predictions < lower_threshold, 0, predictions)
             
-            predictions = predictions.reshape(-1, 1)
+                predictions = predictions.reshape(-1, 1)
             
-            mse = mean_squared_error(feature_test_data, predictions)
+                mse = mean_squared_error(feature_test_data, predictions)
+                features_error[feature] = mse * 100
             
-            features_mse[feature] = mse
+            else:
+                predictions = predictions.reshape(-1, 1)
+                mae = mean_absolute_error(feature_test_data, predictions)    
+                features_error[feature] = mae
             
-        return features_mse
+        return features_error

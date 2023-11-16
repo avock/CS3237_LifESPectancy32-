@@ -6,11 +6,6 @@ import pandas as pd
 import json
 
 from constants import *
-
-load_dotenv()
-
-bot_token = os.environ.get("BOT_TOKEN")
-chat_id = os.environ.get("CHAT_ID_CK")
  
 def write_to_csv(csv_dynamic, csv_main, headers=TEST_HEADERS, data=TEST_DATA):
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -77,8 +72,8 @@ def read_csv(number_of_rows):
 
     return features_lists
             
-def send_telegram_message(message):
-    apiURL = f'https://api.telegram.org/bot{bot_token}/sendMessage'
+def send_telegram_message(message, chat_id=TELEGRAM_CK):
+    apiURL = f'https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage'
 
     try:
         response = requests.post(apiURL, json={'chat_id': chat_id, 'text': message})

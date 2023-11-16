@@ -3,6 +3,7 @@ ERROR_MESSAGE = "ESP32_ERROR"
 ROWS_TO_KEEP = 70
 ESP32_PUBLISH_TOPIC = "home/response"
 
+# CSV Files Related
 GLOBAL_JSON_KEYS = ['time', 'pir', "light", 'ultrasonic', "temperature", "humidity", 'pressure']
 
 FEATURE_COLS = ['pir', 'light', 'ultrasonic', 'pressure', 'temperature', 'humidity']
@@ -29,3 +30,17 @@ TEST_DATA = {
     'header3': 'value3'
 }
 MAX_ROWS = 70
+
+# telegram related
+import os
+import requests
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TELEGRAM_BOT_TOKEN = os.environ.get("BOT_TOKEN")
+TELEGRAM_CK = os.environ.get("CHAT_ID_CK")
+TELEGRAM_ELLIA = os.environ.get("CHAT_ID_ELLIA")
+TELEGRAM_KEVIN = os.environ.get("CHAT_ID_KEVIN")
+TELEGRAM_HANNAH = os.environ.get("CHAT_ID_HANNAH")
+TELEGRAM_GORDON = os.environ.get("CHAT_ID_GORDON")
