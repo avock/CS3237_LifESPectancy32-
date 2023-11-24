@@ -1692,3 +1692,7 @@ python src/app.py
 clear
 source venv/bin/activate
 python src/app.py 
+git add .
+git commit -m "Final Changes"
+git push
+clear
