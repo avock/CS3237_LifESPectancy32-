@@ -1550,3 +1550,145 @@ source venv/bin/activate
 python src/app.py 
 python src/app.py \
 python src/app.py
+source venv/bin/activate
+python src/test.py 
+clear
+python src/test.py 
+clear
+python src/test.py 
+clear
+python src/test.py 
+clear
+python src/test.py 
+clear
+git add .
+git commit -m "Setup Multiple Telegram Chats"
+git push
+clear
+sourec venv/bin/activate
+source venv/bin/activate
+clear
+python src/app.py 
+source venv/bin/activate
+python src/app.py 
+vim src/utils.py 
+source venv/bin/activate
+python src/app.py 
+clear
+ls
+vim src/app.py 
+vim src/app.py
+vim src/utils.py
+vim src/ML/model
+vim src/ML/model.py 
+vim src/mqtt_server.py 
+python src/app.py 
+source venv/bin/activate
+python src/app.py 
+vim src/mqtt_server.py 
+python src/app.py 
+vim src/app.py
+clear
+vim src/mqtt_server.py 
+python src/app.py 
+vim src/app.py
+source venv/bin/activate
+python src/app.py 
+vim src/utils.py 
+python src/app.py 
+clear
+vim src/utils.py 
+python src/app.py 
+vim src/app.py 
+python src/app.p
+python src/app.py 
+vim src/app.py 
+python src/app.py 
+vim src/app.py 
+vim src/utils.py 
+python src/app.py 
+clear
+vim src/utils.py 
+python src/app.py 
+vim src/utils.py 
+python src/app.py 
+clear
+vim src/app.py 
+flask_start
+flask_stop
+clear
+flask_stop
+flask_start
+flask_stop
+ls
+vim .env
+vim src/app.py 
+python src/app.py 
+source venv/bin/activate
+python src/app.py 
+vim .env
+python src/app.py 
+vim .env
+vim src/app.py \
+vim src/app.py
+source venv/bin/activate
+python src/app.py 
+clear
+vim src/app.py 
+python src/app.py 
+clear
+python src/app.py 
+clear
+vim src/app.py 
+python src/app.py 
+source venv/bin/activate
+python src/app.py 
+clear
+vim src/utils.py 
+vim src/ML/model.py 
+vim src/utils.py 
+python src/app.py 
+vim src/utils.py 
+clear
+python src/app.py 
+clear
+logout
+source venv/bin/activate 
+python src/app.py 
+vim src/app.py 
+vim src/utils.py
+vim src/ML/model.py 
+vim src/mqtt_server.py 
+python src/app.py 
+clear
+python src/app.py 
+vim src/app.py 
+python src/app.py 
+clear
+vim src/app.py 
+vim src/utils.py 
+source venv/bin/activate
+python src/app.py 
+clear
+python src/app.py 
+clear
+vim src/mqtt_server.py 
+python src/app.py 
+vim src/mqtt_server.py 
+python src/app.py 
+clear
+python src/app.py 
+vim src/utils.py 
+clear
+source venv/bin/activate
+python src/app.py 
+clear
+python src/app.py 
+source venv/bin/activate
+clear
+python src/app.py 
+clear
+python src/app.py 
+clear
+source venv/bin/activate
+python src/app.py 

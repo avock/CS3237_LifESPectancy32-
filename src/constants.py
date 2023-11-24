@@ -29,7 +29,7 @@ TEST_DATA = {
     'header2': 'value2',
     'header3': 'value3'
 }
-MAX_ROWS = 70
+MAX_ROWS = 65
 
 # telegram related
 import os

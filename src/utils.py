@@ -61,12 +61,18 @@ def read_csv(number_of_rows):
     csv_dynamic_path = os.path.join(data_dir, target_csv)
     csv_dynamic_path_pressure = os.path.join(data_dir, pressure_csv)
     
+
     df = pd.read_csv(csv_dynamic_path, names=JSON_KEYS).dropna()
+    available_rows_main = len(df)
+    df_pressure = pd.read_csv(csv_dynamic_path_pressure, names=PRESSURE_JSON_KEYS).dropna()
+    available_rows_pressure = len(df_pressure)
+    
+    number_of_rows = min(available_rows_main, available_rows_pressure)
+        
     rows_df = df.tail(number_of_rows).to_dict(orient = 'records')
     features_lists = [[row[key] for row in rows_df] for key in JSON_KEYS]
     
-    df = pd.read_csv(csv_dynamic_path_pressure, names=PRESSURE_JSON_KEYS).dropna()
-    rows_df = df.tail(number_of_rows).to_dict(orient = 'records')
+    rows_df = df_pressure.tail(number_of_rows).to_dict(orient = 'records')
     new_row = [row[key] for row in rows_df for key in PRESSURE_JSON_KEYS] 
     features_lists.append(new_row)
 
@@ -88,3 +94,55 @@ def process_json_payload(payload_json, keys):
             extracted_data[key] = payload_json[key]
 
     return extracted_data
+
+def anomaly_threshold_check(features_error):
+    
+    feature_anomaly = {}
+    
+    for feature in FEATURE_COLS:
+        feature_error = features_error[feature]
+        
+        if feature_error > feature_anomaly_thresholds[feature]:
+            feature_anomaly[feature] = True
+        else: 
+            feature_anomaly[feature] = False
+            
+    return feature_anomaly
+
+feature_anomaly_thresholds = {    
+    'pir': 35,
+    'light': 35,
+    'ultrasonic': 35,
+    'pressure': 50,
+    'temperature': 10,
+    'humidity': 15
+}
+
+def format_anomaly_threshold(features_error):
+    
+    temperature_anomaly = False
+    humidity_anomaly = False
+    movement_anomaly = False
+    
+    messages = {}
+    
+    if features_error['pir'] or features_error['ultrasonic'] or features_error['pressure']:
+        messages['movmement'] = True
+        
+    if features_error['temperature']:
+        messages['temperature'] = True
+        
+    if features_error['humidity']:
+        messages['humidity'] = True
+            
+    return messages
+
+def format_anomaly_message(features_anomaly):
+    anomalies = []
+    for key, value in features_anomaly.items():
+        if value:
+            anomalies.append(key.capitalize())
+    message = f'[ALERT] Anomaly Detected in {", ".join(anomalies)}' if anomalies else ''
+    print(anomalies)
+    return message
+        

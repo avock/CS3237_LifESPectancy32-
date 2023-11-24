@@ -60,7 +60,7 @@ class RegModel:
     def read_data(self):
         results = {}
         for idx, cols in enumerate(GLOBAL_JSON_KEYS):
-            results[cols] = read_csv(3)[idx]
+            results[cols] = read_csv(60)[idx]
 
         df = pd.DataFrame(results)
         df = df_time_preprocess(df)

@@ -15,9 +15,13 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1700071450,,"wq"
+|2,0,1700147074,,"wq"
+:Wq
+|2,0,1700146856,,"Wq"
+:wq\
+|2,0,1700141952,,"wq\\"
 :q
-|2,0,1700050491,,"q"
+|2,0,1700136813,,"q"
 :w
 |2,0,1698668291,,"w"
 :q!
@@ -37,264 +41,316 @@ $
 
 # Registers:
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1700071358,""
+	            send_telegram_message(data, TELEGRAM_HANNAH)
+|3,1,1,1,1,0,1700140722,"            send_telegram_message(data, TELEGRAM_HANNAH)"
 "2	LINE	0
-	    return 'some output'
-|3,0,2,1,1,0,1700071357,"    return 'some output'"
+	            send_telegram_message(data)
+|3,0,2,1,1,0,1700140705,"            send_telegram_message(data)"
 "3	LINE	0
-	def some_func():
-|3,0,3,1,1,0,1700071356,"def some_func():"
+	            send_telegram_message(data, TELEGRAM_ELLIA)
+|3,0,3,1,1,0,1700140704,"            send_telegram_message(data, TELEGRAM_ELLIA)"
 "4	LINE	0
-	@app.route('/cam_output')
-|3,0,4,1,1,0,1700071356,"@app.route('/cam_output')"
+	            send_telegram_message(data['time'], TELEGRAM_KEVIN)
+|3,0,4,1,1,0,1700140703,"            send_telegram_message(data['time'], TELEGRAM_KEVIN)"
 "5	LINE	0
-	    print('/anomaly triggered')
-|3,0,5,1,1,0,1700051889,"    print('/anomaly triggered')"
+	    send_telegram_message(results)
+|3,0,5,1,1,0,1700139190,"    send_telegram_message(results)"
 "6	LINE	0
-	    send_telegram_message(resp)
-|3,0,6,1,1,0,1700051632,"    send_telegram_message(resp)"
+	            send_telegram_message(data, TELEGRAM_HANNAH)
+|3,0,6,1,1,0,1700137120,"            send_telegram_message(data, TELEGRAM_HANNAH)"
 "7	LINE	0
-	    resp.status_code = 200
-|3,0,7,1,1,0,1700050324,"    resp.status_code = 200"
+	    send_telegram_message(results) 
+|3,0,7,1,1,0,1700129850,"    send_telegram_message(results) "
 "8	LINE	0
-	    resp = results
-|3,0,8,1,1,0,1700050324,"    resp = results"
+	
+|3,0,8,1,1,0,1700071358,""
 "9	LINE	0
-	            print(cols, len(read_csv(1)), idx)
-|3,0,9,1,1,0,1700048703,"            print(cols, len(read_csv(1)), idx)"
+	    return 'some output'
+|3,0,9,1,1,0,1700071357,"    return 'some output'"
 
 # File marks:
-'0  113  14  ~/src/app.py
-|4,48,113,14,1700071450,"~/src/app.py"
-'1  56  4  ~/src/app.py
-|4,49,56,4,1700051892,"~/src/app.py"
-'2  56  4  ~/src/app.py
-|4,50,56,4,1700051892,"~/src/app.py"
-'3  53  32  ~/src/app.py
-|4,51,53,32,1700051648,"~/src/app.py"
-'4  53  32  ~/src/app.py
-|4,52,53,32,1700051648,"~/src/app.py"
-'5  53  32  ~/src/app.py
-|4,53,53,32,1700051648,"~/src/app.py"
-'6  53  32  ~/src/app.py
-|4,54,53,32,1700051648,"~/src/app.py"
-'7  56  28  ~/src/app.py
-|4,55,56,28,1700051570,"~/src/app.py"
-'8  56  28  ~/src/app.py
-|4,56,56,28,1700051570,"~/src/app.py"
-'9  56  28  ~/src/app.py
-|4,57,56,28,1700051570,"~/src/app.py"
+'0  76  35  ~/src/utils.py
+|4,48,76,35,1700147074,"~/src/utils.py"
+'1  89  0  ~/src/utils.py
+|4,49,89,0,1700146857,"~/src/utils.py"
+'2  89  0  ~/src/utils.py
+|4,50,89,0,1700146857,"~/src/utils.py"
+'3  55  0  ~/src/ML/model.py
+|4,51,55,0,1700146842,"~/src/ML/model.py"
+'4  68  0  ~/src/utils.py
+|4,52,68,0,1700146824,"~/src/utils.py"
+'5  68  0  ~/src/utils.py
+|4,53,68,0,1700146824,"~/src/utils.py"
+'6  68  0  ~/src/utils.py
+|4,54,68,0,1700146824,"~/src/utils.py"
+'7  68  0  ~/src/utils.py
+|4,55,68,0,1700146824,"~/src/utils.py"
+'8  110  17  ~/src/utils.py
+|4,56,110,17,1700144365,"~/src/utils.py"
+'9  110  17  ~/src/utils.py
+|4,57,110,17,1700144365,"~/src/utils.py"
 
 # Jumplist (newest first):
--'  113  14  ~/src/app.py
-|4,39,113,14,1700071450,"~/src/app.py"
--'  56  4  ~/src/app.py
-|4,39,56,4,1700071347,"~/src/app.py"
--'  56  4  ~/src/app.py
-|4,39,56,4,1700051892,"~/src/app.py"
--'  53  32  ~/src/app.py
-|4,39,53,32,1700051885,"~/src/app.py"
--'  53  32  ~/src/app.py
-|4,39,53,32,1700051885,"~/src/app.py"
--'  53  32  ~/src/app.py
-|4,39,53,32,1700051648,"~/src/app.py"
--'  56  28  ~/src/app.py
-|4,39,56,28,1700051619,"~/src/app.py"
--'  56  28  ~/src/app.py
-|4,39,56,28,1700051570,"~/src/app.py"
--'  46  23  ~/src/app.py
-|4,39,46,23,1700051555,"~/src/app.py"
--'  46  23  ~/src/app.py
-|4,39,46,23,1700051555,"~/src/app.py"
--'  46  23  ~/src/app.py
-|4,39,46,23,1700051555,"~/src/app.py"
--'  46  23  ~/src/app.py
-|4,39,46,23,1700051555,"~/src/app.py"
--'  46  23  ~/src/app.py
-|4,39,46,23,1700050605,"~/src/app.py"
--'  47  26  ~/src/app.py
-|4,39,47,26,1700050599,"~/src/app.py"
--'  47  26  ~/src/app.py
-|4,39,47,26,1700050599,"~/src/app.py"
--'  47  26  ~/src/app.py
-|4,39,47,26,1700050599,"~/src/app.py"
--'  47  26  ~/src/app.py
-|4,39,47,26,1700050599,"~/src/app.py"
--'  47  26  ~/src/app.py
-|4,39,47,26,1700050599,"~/src/app.py"
--'  47  26  ~/src/app.py
-|4,39,47,26,1700050588,"~/src/app.py"
--'  48  15  ~/src/app.py
-|4,39,48,15,1700050570,"~/src/app.py"
--'  48  15  ~/src/app.py
-|4,39,48,15,1700050570,"~/src/app.py"
--'  48  15  ~/src/app.py
-|4,39,48,15,1700050570,"~/src/app.py"
--'  48  15  ~/src/app.py
-|4,39,48,15,1700050570,"~/src/app.py"
--'  48  15  ~/src/app.py
-|4,39,48,15,1700050570,"~/src/app.py"
--'  48  15  ~/src/app.py
-|4,39,48,15,1700050570,"~/src/app.py"
--'  48  15  ~/src/app.py
-|4,39,48,15,1700050491,"~/src/app.py"
--'  50  17  ~/src/app.py
-|4,39,50,17,1700050373,"~/src/app.py"
--'  50  17  ~/src/app.py
-|4,39,50,17,1700050373,"~/src/app.py"
--'  50  17  ~/src/app.py
-|4,39,50,17,1700050373,"~/src/app.py"
--'  50  17  ~/src/app.py
-|4,39,50,17,1700050373,"~/src/app.py"
--'  50  17  ~/src/app.py
-|4,39,50,17,1700050373,"~/src/app.py"
--'  50  17  ~/src/app.py
-|4,39,50,17,1700050373,"~/src/app.py"
--'  50  17  ~/src/app.py
-|4,39,50,17,1700050373,"~/src/app.py"
--'  50  17  ~/src/app.py
-|4,39,50,17,1700050331,"~/src/app.py"
--'  49  10  ~/src/app.py
-|4,39,49,10,1700050308,"~/src/app.py"
--'  49  10  ~/src/app.py
-|4,39,49,10,1700050308,"~/src/app.py"
--'  49  10  ~/src/app.py
-|4,39,49,10,1700050308,"~/src/app.py"
--'  49  10  ~/src/app.py
-|4,39,49,10,1700050308,"~/src/app.py"
--'  49  10  ~/src/app.py
-|4,39,49,10,1700050308,"~/src/app.py"
--'  49  10  ~/src/app.py
-|4,39,49,10,1700050308,"~/src/app.py"
--'  49  10  ~/src/app.py
-|4,39,49,10,1700050308,"~/src/app.py"
--'  49  10  ~/src/app.py
-|4,39,49,10,1700050308,"~/src/app.py"
--'  48  10  ~/src/app.py
-|4,39,48,10,1700050296,"~/src/app.py"
--'  35  14  ~/src/app.py
-|4,39,35,14,1700050285,"~/src/app.py"
--'  35  14  ~/src/app.py
-|4,39,35,14,1700050285,"~/src/app.py"
--'  35  14  ~/src/app.py
-|4,39,35,14,1700050285,"~/src/app.py"
--'  35  14  ~/src/app.py
-|4,39,35,14,1700050285,"~/src/app.py"
--'  35  14  ~/src/app.py
-|4,39,35,14,1700050285,"~/src/app.py"
--'  35  14  ~/src/app.py
-|4,39,35,14,1700050285,"~/src/app.py"
--'  35  14  ~/src/app.py
-|4,39,35,14,1700050285,"~/src/app.py"
--'  35  14  ~/src/app.py
-|4,39,35,14,1700050285,"~/src/app.py"
--'  35  14  ~/src/app.py
-|4,39,35,14,1700050285,"~/src/app.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
--'  7  22  ~/src/test.py
-|4,39,7,22,1700049465,"~/src/test.py"
+-'  76  35  ~/src/utils.py
+|4,39,76,35,1700147074,"~/src/utils.py"
+-'  89  0  ~/src/utils.py
+|4,39,89,0,1700147027,"~/src/utils.py"
+-'  89  0  ~/src/utils.py
+|4,39,89,0,1700146857,"~/src/utils.py"
+-'  68  0  ~/src/utils.py
+|4,39,68,0,1700146843,"~/src/utils.py"
+-'  68  0  ~/src/utils.py
+|4,39,68,0,1700146843,"~/src/utils.py"
+-'  55  0  ~/src/ML/model.py
+|4,39,55,0,1700146842,"~/src/ML/model.py"
+-'  55  0  ~/src/ML/model.py
+|4,39,55,0,1700146842,"~/src/ML/model.py"
+-'  55  0  ~/src/ML/model.py
+|4,39,55,0,1700146842,"~/src/ML/model.py"
+-'  55  0  ~/src/ML/model.py
+|4,39,55,0,1700146842,"~/src/ML/model.py"
+-'  94  0  ~/src/ML/model.py
+|4,39,94,0,1700146830,"~/src/ML/model.py"
+-'  94  0  ~/src/ML/model.py
+|4,39,94,0,1700146830,"~/src/ML/model.py"
+-'  94  0  ~/src/ML/model.py
+|4,39,94,0,1700146830,"~/src/ML/model.py"
+-'  94  0  ~/src/ML/model.py
+|4,39,94,0,1700146830,"~/src/ML/model.py"
+-'  68  0  ~/src/utils.py
+|4,39,68,0,1700146824,"~/src/utils.py"
+-'  68  0  ~/src/utils.py
+|4,39,68,0,1700146824,"~/src/utils.py"
+-'  110  17  ~/src/utils.py
+|4,39,110,17,1700146816,"~/src/utils.py"
+-'  110  17  ~/src/utils.py
+|4,39,110,17,1700146816,"~/src/utils.py"
+-'  110  17  ~/src/utils.py
+|4,39,110,17,1700146816,"~/src/utils.py"
+-'  110  17  ~/src/utils.py
+|4,39,110,17,1700146816,"~/src/utils.py"
+-'  110  17  ~/src/utils.py
+|4,39,110,17,1700144365,"~/src/utils.py"
+-'  110  17  ~/src/utils.py
+|4,39,110,17,1700144365,"~/src/utils.py"
+-'  140  19  ~/src/utils.py
+|4,39,140,19,1700144342,"~/src/utils.py"
+-'  140  19  ~/src/utils.py
+|4,39,140,19,1700144342,"~/src/utils.py"
+-'  140  19  ~/src/utils.py
+|4,39,140,19,1700144342,"~/src/utils.py"
+-'  140  19  ~/src/utils.py
+|4,39,140,19,1700144342,"~/src/utils.py"
+-'  140  19  ~/src/utils.py
+|4,39,140,19,1700144342,"~/src/utils.py"
+-'  140  19  ~/src/utils.py
+|4,39,140,19,1700144342,"~/src/utils.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  42  11  ~/src/mqtt_server.py
+|4,39,42,11,1700143801,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143781,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143779,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143779,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143779,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143779,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143779,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143779,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143779,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143779,"~/src/mqtt_server.py"
+-'  39  33  ~/src/mqtt_server.py
+|4,39,39,33,1700143779,"~/src/mqtt_server.py"
 
 # History of marks within files (newest to oldest):
 
+> ~/src/utils.py
+	*	1700147073	0
+	"	76	35
+	^	76	36
+	.	75	24
+	+	124	15
+	+	127	15
+	+	130	15
+	+	107	12
+	+	108	14
+	+	109	19
+	+	110	17
+	+	111	20
+	+	112	17
+	+	134	0
+	+	134	45
+	+	136	0
+	+	135	0
+	+	140	19
+	+	107	11
+	+	108	13
+	+	109	18
+	+	110	17
+	+	67	14
+	+	68	44
+	+	75	24
+
+> ~/src/ML/model.py
+	*	1700146841	0
+	"	55	0
+	^	75	15
+	.	75	14
+	+	4	0
+	+	10	0
+	+	14	0
+	+	21	0
+	+	29	16
+	+	63	0
+	+	75	14
+
+> ~/src/mqtt_server.py
+	*	1700143788	0
+	"	42	11
+	^	42	12
+	.	42	12
+	+	39	0
+	+	39	56
+	+	39	0
+	+	42	0
+	+	39	34
+	+	42	12
+
 > ~/src/app.py
-	*	1700071445	0
-	"	113	14
-	^	113	15
-	.	113	14
+	*	1700142218	0
+	"	71	9
+	^	91	69
+	.	91	68
 	+	21	24
 	+	35	22
 	+	49	11
@@ -306,15 +362,40 @@ $
 	+	47	26
 	+	46	23
 	+	56	28
-	+	55	0
-	+	53	32
 	+	56	0
-	+	119	0
-	+	103	15
-	+	105	43
-	+	109	42
-	+	110	49
-	+	113	14
+	+	54	32
+	+	56	0
+	+	122	0
+	+	106	15
+	+	108	43
+	+	112	42
+	+	113	49
+	+	116	14
+	+	59	18
+	+	61	25
+	+	54	4
+	+	64	9
+	+	52	26
+	+	64	8
+	+	52	20
+	+	54	16
+	+	56	17
+	+	87	72
+	+	91	50
+	+	88	0
+	+	91	68
+
+> ~/src/ML/model
+	*	1700136812	0
+	"	1	0
+
+> ~/.env
+	*	1700135953	0
+	"	6	25
+	^	6	26
+	.	6	25
+	+	5	24
+	+	6	25
 
 > ~/src/test.py
 	*	1700049464	0
@@ -322,19 +403,6 @@ $
 	^	7	23
 	.	7	22
 	+	7	22
-
-> ~/src/ML/model.py
-	*	1700049447	0
-	"	75	14
-	^	75	15
-	.	75	14
-	+	4	0
-	+	10	0
-	+	14	0
-	+	21	0
-	+	29	16
-	+	63	0
-	+	75	14
 
 > /etc/systemd/system/flask_RESTapi.service
 	*	1698681353	0

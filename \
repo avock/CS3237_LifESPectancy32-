@@ -61,6 +61,7 @@ def anomaly_check():
     if results:
         send_telegram_message(results)
         send_telegram_message(results, TELEGRAM_ELLIA)
+        send_telegram_message(results, TELEGRAM_HANNAH)
     
     resp = jsonify({
         'message': 'Anomaly Detection Successful'

@@ -36,8 +36,10 @@ class MQTTServer:
         }
         
         if topic == ESP32_SUBSCRIBE_TOPIC:
+            print(data)
             write_to_csv(csv_dynamic=DYNAMIC_CSV_FILENAME, csv_main=MASTER_CSV_FILENAME, headers=JSON_KEYS, data=data)
         elif topic == PRESSURE_ESP32_SUBSCRIBE_TOPIC:
+             
             write_to_csv(csv_dynamic=PRESSURE_DYNAMIC_CSV_FILENAME, csv_main=PRESSURE_MASTER_CSV_FILENAME, headers=PRESSURE_JSON_KEYS, data=data)
         
         # send_telegram_message(data)
